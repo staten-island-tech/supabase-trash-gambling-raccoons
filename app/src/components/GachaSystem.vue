@@ -1,12 +1,24 @@
 <template>
   <div>
     <button type="submit" @click="pullTen">Pull 10X!</button>
+    <button type="submit" @click="pullOne">Pull 1X!</button>
   </div>
 </template>
 
 <script setup>
-let {data}
-function pullTen() {}
+//supposed to pull stuff from supabase
+let { cards: allCards, error } = await supabase.from('allCards')
+let pulledCards = [] //array for cards that were pulled
+function pullTen() {
+  for (let i = 0; i < 10; i++) {
+    pulledCards.push(cards[Math.floor(Math.random() * allCards.length + 1)])
+  }
+  console.log(pulledCards) //basically pull 10 random cards and show in console.log
+}
+function pullOne() {
+  pulledCards.push(cards[Math.floor(Math.random() * allCards.length + 1)])
+  console.log(pulledCards) //pull one card and show it
+}
 </script>
 
 <style scoped></style>
