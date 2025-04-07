@@ -5,10 +5,10 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 //supposed to pull stuff from supabase
 let { cards: allCards, error } = await supabase.from('allCards')
-let pulledCards = [] //array for cards that were pulled
+let pulledCards: string[] = [] //array for cards that were pulled
 function pullTen() {
   for (let i = 0; i < 10; i++) {
     pulledCards.push(cards[Math.floor(Math.random() * allCards.length + 1)])
