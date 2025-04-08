@@ -6,6 +6,8 @@ export type card = {
     card_type: string;
     card_image: string;
     stars: number;
+    game: string;
+    region: string;
 
 }
 
@@ -18,7 +20,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -27,7 +31,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -36,7 +42,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -45,7 +53,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -54,7 +64,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -63,7 +75,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -72,7 +86,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -81,7 +97,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -90,7 +108,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -99,7 +119,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -108,7 +130,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -117,7 +141,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -126,7 +152,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -135,7 +163,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -144,7 +174,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -153,7 +185,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -162,7 +196,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -171,7 +207,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -180,7 +218,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -189,7 +229,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -198,7 +240,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -207,7 +251,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -216,7 +262,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -225,7 +273,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -234,7 +284,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -243,7 +295,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -252,7 +306,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -261,7 +317,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -270,7 +328,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -279,7 +339,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -288,7 +350,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -297,7 +361,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -306,7 +372,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -315,7 +383,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -324,7 +394,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -333,7 +405,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -342,7 +416,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -351,7 +427,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -360,7 +438,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -369,7 +449,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -378,7 +460,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -387,7 +471,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -396,7 +482,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -405,7 +493,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -414,7 +504,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -423,7 +515,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -432,7 +526,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -441,7 +537,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -450,7 +548,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -459,7 +559,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -468,7 +570,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -477,7 +581,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -486,7 +592,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -495,7 +603,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -504,7 +614,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -513,7 +625,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -522,7 +636,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -531,7 +647,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -540,7 +658,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -549,7 +669,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -558,7 +680,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -567,7 +691,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -576,7 +702,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -585,7 +713,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -594,7 +724,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -603,7 +735,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -612,7 +746,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -621,7 +757,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -630,7 +768,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -639,7 +779,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -648,7 +790,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -657,7 +801,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -666,7 +812,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -675,7 +823,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -684,7 +834,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -693,7 +845,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -702,7 +856,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -711,7 +867,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -720,7 +878,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -729,7 +889,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -738,7 +900,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -747,7 +911,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -756,7 +922,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -765,7 +933,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -774,7 +944,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -783,7 +955,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -792,7 +966,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -801,7 +977,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -810,7 +988,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -819,7 +999,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -828,7 +1010,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -837,7 +1021,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -846,7 +1032,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -855,7 +1043,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -864,7 +1054,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -873,7 +1065,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -882,7 +1076,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -891,7 +1087,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -900,7 +1098,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -909,7 +1109,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -918,7 +1120,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -927,7 +1131,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -936,7 +1142,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -945,7 +1153,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -954,7 +1164,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -963,7 +1175,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -972,7 +1186,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -981,7 +1197,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -990,7 +1208,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -999,7 +1219,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1008,7 +1230,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1017,7 +1241,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1026,7 +1252,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1035,7 +1263,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1044,7 +1274,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1053,7 +1285,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1062,7 +1296,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1071,7 +1307,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1080,7 +1318,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1089,7 +1329,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1098,7 +1340,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1107,7 +1351,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1116,7 +1362,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1125,7 +1373,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1134,7 +1384,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1143,7 +1395,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1152,7 +1406,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1161,7 +1417,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1170,7 +1428,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1179,7 +1439,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1188,7 +1450,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1197,7 +1461,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1206,7 +1472,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1215,7 +1483,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1224,7 +1494,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1233,7 +1505,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1242,7 +1516,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1251,7 +1527,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1260,7 +1538,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1269,7 +1549,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1278,7 +1560,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1287,7 +1571,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1296,7 +1582,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1305,7 +1593,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1314,7 +1604,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1323,7 +1615,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1332,7 +1626,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1341,7 +1637,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1350,7 +1648,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1359,7 +1659,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1368,7 +1670,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1377,7 +1681,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1386,7 +1692,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1395,7 +1703,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1404,7 +1714,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1413,7 +1725,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1422,7 +1736,9 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
     {
         name: "string",
@@ -1431,9 +1747,8 @@ export const cards: card[] = [
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1 /* think about thise later too^2 */
+        stars: 1, /* think about thise later too^2 */
+        game: "Honkai: Star Rail",
+        region: "Astral Express",
     },
-
-    
-
 ]
