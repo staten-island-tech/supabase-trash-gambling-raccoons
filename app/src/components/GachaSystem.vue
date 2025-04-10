@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 //supposed to pull stuff from supabase
-let { cards: allCards, error } = await supabase.from('allCards')
+import { cards } from '../src/Cards.ts'
 let pityCount = 0
 let pulledCards: string[] = [] //array for cards that were pulled
 function pullTen() {
@@ -17,7 +17,7 @@ function pullTen() {
       //pull five star card!!!
       pityCount = 0
     } else {
-      pulledCards.push(cards[Math.floor(Math.random() * allCards.length + 1)])
+      pulledCards.push(cards[Math.floor(Math.random() * cards.length + 1)])
     }
   }
   console.log(pulledCards) //basically pull 10 random cards and show in console.log
