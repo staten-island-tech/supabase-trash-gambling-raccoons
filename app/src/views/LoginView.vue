@@ -5,32 +5,32 @@
         <br>
         <input v-model="passwordinput" type="text" ref="password" placeholder="Password">
         <button @click="loginacc">Login In</button>
-        <h1 v-if="!allinfofilledout">Fill Out all Info</h1>
+        <h1 v-if="allinfofilledout == true">Fill Out all Info</h1>
 
     </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
-
+import type { Auth } from 'firebase/auth';
+ 
 const usernameinput = ref('')
 const passwordinput = ref('')
 
-const allinfofilledout = ref(true)
+const allinfofilledout = ref(false)
 
 const loginacc = () => {
     if (usernameinput.value == '' || passwordinput.value == ''){
         console.log("Please fill out all information")
-        allinfofilledout.value != allinfofilledout.value
-    }else{
+        allinfofilledout.value = true
+    }else if (usernameinput.value && passwordinput.value != ''){
         console.log(usernameinput.value)
         console.log(passwordinput.value)
+        allinfofilledout.value == false
+        usernameinput.value = ''
+        passwordinput.value = ''
     }
-
     
-
-    usernameinput.value = ''
-    passwordinput.value = ''
 }
 
 
