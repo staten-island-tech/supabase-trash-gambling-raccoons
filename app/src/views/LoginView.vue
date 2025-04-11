@@ -5,33 +5,35 @@
         <br>
         <input v-model="passwordinput" type="text" ref="password" placeholder="Password">
         <button @click="loginacc">Login In</button>
-        <h1 v-if="allinfofilledout == true">Fill Out all Info</h1>
+        <h1 v-if="allinfofilledout == true">{{ filloutinfo }}</h1>
 
     </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import type { Auth } from 'firebase/auth';
+import { ref, onMounted } from 'vue';
+import { auth, db } from '../firebase';
+import { signInWithEmailAndPassword, type UserCredential } from 'firebase/auth';
+import { collection, getDocs } from 'firebase/firestore';
  
 const usernameinput = ref('')
 const passwordinput = ref('')
+const filloutinfo = ref('')
 
 const allinfofilledout = ref(false)
 
-const loginacc = () => {
-    if (usernameinput.value == '' || passwordinput.value == ''){
-        console.log("Please fill out all information")
-        allinfofilledout.value = true
-    }else if (usernameinput.value && passwordinput.value != ''){
-        console.log(usernameinput.value)
-        console.log(passwordinput.value)
-        allinfofilledout.value == false
-        usernameinput.value = ''
-        passwordinput.value = ''
+const loginacc = async () => {
+    try {
+        const usercredential: UserCredential = await signInWithEmailAndPassword(auth, usernameinput.value, passwordinput.value)
+        filloutinfo.value = ''
+    } catch (error: any){
+        filloutinfo.value = 'Fill Out All Info'
     }
-    
 }
+
+onMounted(async(): Promise<void>=> {
+    
+})
 
 
 
