@@ -8,7 +8,6 @@ export type card = {
     stars: number;
     game: string;
     region: string;
-
 }
 
 
