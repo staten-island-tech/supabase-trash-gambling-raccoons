@@ -3,7 +3,7 @@
 
         <input v-model="usernameinput" type="text" ref="username" placeholder="Username">
         <br>
-        <input v-model="passwordinput" type="text" ref="password" placeholder="Password">
+        <input v-model="passwordinput" type="text" ref="password" placeholder="Password (Min 8 Things)">
         <button @click="loginacc">Login In</button>
         <h1 v-if="allinfofilledout == true">{{ filloutinfo }}</h1>
 
