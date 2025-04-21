@@ -13,24 +13,30 @@ import { cards } from '../Cards.ts'
 import type { card } from '../Cards.ts'
 import PulledGachaCards from '@/components/PulledGachaCards.vue'
 let pityCount = 0
-let pulledCards = ref<card[]>([]) //array for cards that were pulled
+const pulledCards = ref<card[]>([]) //array for cards that were pulled
+let fiveStarCard: card[] = cards.filter((star) => star.stars === 5)
 
 function pullTen() {
   for (let i = 0; i < 10; i++) {
     if (pityCount >= 90) {
       //pull five star card!!!
+      pulledCards.value.push(fiveStarCard[Math.floor(Math.random() * cards.length)])
       pityCount = 0
     } else {
       pulledCards.value.push(cards[Math.floor(Math.random() * cards.length)])
+      if (pulledCards.value.includes(fiveStarCard)) {
+        pityCount = 0
+      }
+      pityCount++
     }
-    pityCount++
+    console.log(pulledCards) //basically pull 10 random cards and show in console.log
   }
-  console.log(pulledCards) //basically pull 10 random cards and show in console.log
 }
 function pullOne() {
   pityCount++
   if (pityCount >= 90) {
     //pull five star card!!!
+    pulledCards.value.push(fiveStarCard[Math.floor(Math.random() * cards.length)])
     pityCount = 0
   } else {
     pulledCards.value.push(cards[Math.floor(Math.random() * cards.length)])

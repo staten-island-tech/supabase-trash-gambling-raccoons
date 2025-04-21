@@ -1,6 +1,6 @@
 <template>
   <div class="fixed">
-    <img :src="ownedCards.card_image" alt="" srcset="" />
+    <img :src="ownedCards.card_image" alt="image!" srcset="" />
     <h1>{{ ownedCards.name }}</h1>
   </div>
 </template>
