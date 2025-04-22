@@ -23,23 +23,30 @@ function pullTen() {
       pulledCards.value.push(fiveStarCard[Math.floor(Math.random() * cards.length)])
       pityCount = 0
     } else {
-      pulledCards.value.push(cards[Math.floor(Math.random() * cards.length)])
-      if (pulledCards.value.includes(fiveStarCard)) {
+      const cardPulled = cards[Math.floor(Math.random() * cards.length)]
+      pulledCards.value.push(cardPulled)
+      if (fiveStarCard.includes(cardPulled)) {
         pityCount = 0
+      } else {
+        pityCount++
       }
-      pityCount++
     }
     console.log(pulledCards) //basically pull 10 random cards and show in console.log
   }
 }
 function pullOne() {
-  pityCount++
   if (pityCount >= 90) {
     //pull five star card!!!
     pulledCards.value.push(fiveStarCard[Math.floor(Math.random() * cards.length)])
     pityCount = 0
   } else {
-    pulledCards.value.push(cards[Math.floor(Math.random() * cards.length)])
+    const cardPulled = cards[Math.floor(Math.random() * cards.length)]
+    pulledCards.value.push(cardPulled)
+    if (fiveStarCard.includes(cardPulled)) {
+      pityCount = 0
+    } else {
+      pityCount++
+    }
   }
   console.log(pulledCards) //pull one card and show it
 }

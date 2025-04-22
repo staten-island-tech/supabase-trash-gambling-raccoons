@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed">
+  <div class="">
     <img :src="ownedCards.card_image" alt="image!" srcset="" />
     <h1>{{ ownedCards.name }}</h1>
   </div>
@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 import type { card } from '../Cards.ts'
-interface Props {
+type Props = {
   ownedCards: card
 }
 defineProps<Props>()
