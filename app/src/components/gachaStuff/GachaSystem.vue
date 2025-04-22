@@ -9,9 +9,9 @@
 <script setup lang="ts">
 //supposed to pull stuff from supabase
 import { ref } from 'vue'
-import { cards } from '../Cards.ts'
-import type { card } from '../Cards.ts'
-import PulledGachaCards from '@/components/PulledGachaCards.vue'
+import { cards } from '../../Cards.ts'
+import type { card } from '../../Cards.ts'
+import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
 let pityCount = 0
 const pulledCards = ref<card[]>([]) //array for cards that were pulled
 let fiveStarCard: card[] = cards.filter((star) => star.stars === 5)
