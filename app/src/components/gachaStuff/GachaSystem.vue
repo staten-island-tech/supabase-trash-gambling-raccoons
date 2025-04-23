@@ -1,16 +1,16 @@
 <template>
   <div>
-    <PulledGachaCards v-for="card in pulledCards" :ownedCards="card" />
     <button type="submit" @click="pullTen">Pull 10X!</button>
     <button type="submit" @click="pullOne">Pull 1X!</button>
+    <PulledGachaCards v-for="card in pulledCards" :ownedCards="card" />
   </div>
 </template>
 
 <script setup lang="ts">
 //supposed to pull stuff from supabase
 import { ref } from 'vue'
-import { cards } from '../../Cards.ts'
-import type { card } from '../../Cards.ts'
+import { type card } from '../ts/types'
+import { cards } from '../ts/Cards'
 import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
 let pityCount = 0
 const pulledCards = ref<card[]>([]) //array for cards that were pulled
