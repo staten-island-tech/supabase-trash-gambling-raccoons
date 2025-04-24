@@ -1,24 +1,17 @@
 <template>
   <div class="deck">
-    <img class="img" />
-    <!-- remember to put in source later -->
-    <h2 class="numberofdeck"></h2>
+    <button type="submit" @click="showCards">{{ deckItems.name }}</button>
   </div>
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  deck: {
-    type: Object,
-  },
+import type { deck } from '../ts/types'
+type Props = {
+  deckItems: deck
+}
+defineProps<Props>()
 
-  img: {
-    type: Object,
-  },
-  numberofdeck: {
-    type: Object,
-  },
-})
+function showCards() {}
 </script>
 
 <style scoped></style>

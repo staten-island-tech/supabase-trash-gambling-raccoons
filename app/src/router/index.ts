@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LoginView from '../views/LoginView.vue'
 import GachaView from '@/views/GachaView.vue'
+import DecksView from '@/views/DecksView.vue'
 import '@/assets/main.css'
 
 const router = createRouter({
@@ -15,6 +16,11 @@ const router = createRouter({
       path: '/gacha',
       name: 'gacha',
       component: GachaView,
+    },
+    {
+      path: '/deck',
+      name: 'deck',
+      component: DecksView,
     }
   ],
 })

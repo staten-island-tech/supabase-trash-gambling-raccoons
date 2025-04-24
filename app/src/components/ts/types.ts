@@ -12,5 +12,5 @@ export type card = {
 
 export type deck = {
     name: string
-    cards: card
+    cards: card[]
 }

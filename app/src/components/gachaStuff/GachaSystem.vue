@@ -12,7 +12,7 @@ import { ref } from 'vue'
 import { type card } from '../ts/types'
 import { cards } from '../ts/Cards'
 import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
-let pityCount = 0
+let pityCount: number = 0
 const pulledCards = ref<card[]>([]) //array for cards that were pulled
 let fiveStarCard: card[] = cards.filter((star) => star.stars === 5)
 
