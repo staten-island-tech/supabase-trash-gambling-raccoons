@@ -13,7 +13,7 @@ let nameOfDeck: string = ''
 let decks = ref<deck[]>([])
 function createDeck() {
   //figure out how to push names and empty card array for later inputs into deck
-  decks.value.push({ name: nameOfDeck, cards: '' })
+  decks.value.push({ name: nameOfDeck, cards: [] })
 }
 </script>
 
