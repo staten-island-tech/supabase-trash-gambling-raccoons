@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Cards Down HERE!</h1>
+    <h1>{{ deckItems.name }}</h1>
+    <img :src="deckItems.card_image" alt="Image of your card" />
   </div>
 </template>
 

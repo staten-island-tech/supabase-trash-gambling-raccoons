@@ -1,7 +1,9 @@
 <template>
   <div class="deck">
     <button type="submit" @click="isClicked = !isClicked">{{ deckItems.name }}</button>
-    <CardsInDeck v-show="isClicked" v-for="card in deckItems.cards" :deckItems="card" />
+    <h1 v-if="isClicked">Your Cards</h1>
+    <CardsInDeck v-if="isClicked" v-for="card in deckItems.cards" :deckItems="card" />
+    <h1 v-else>Click {{ deckItems.name }} to view cards</h1>
   </div>
 </template>
 
@@ -10,7 +12,7 @@ import type { deck } from '../ts/types'
 import CardsInDeck from './CardsInDeck.vue'
 import { ref } from 'vue'
 
-const isClicked = ref(true)
+const isClicked = ref(false)
 
 type Props = {
   deckItems: deck

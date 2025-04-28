@@ -1,7 +1,7 @@
 <template>
   <div>
-    <button type="submit" @click="pullTen">Pull 10X!</button>
-    <button type="submit" @click="pullOne">Pull 1X!</button>
+    <button type="submit" @click="pullAmount(10)">Pull 10X!</button>
+    <button type="submit" @click="pullAmount(1)">Pull 1X!</button>
     <PulledGachaCards v-for="card in pulledCards" :ownedCards="card" />
   </div>
 </template>
@@ -16,8 +16,8 @@ let pityCount: number = 0
 const pulledCards = ref<card[]>([]) //array for cards that were pulled
 let fiveStarCard: card[] = cards.filter((star) => star.stars === 5)
 
-function pullTen() {
-  for (let i = 0; i < 10; i++) {
+function pullAmount(amount: number) {
+  for (let i = 0; i < amount; i++) {
     if (pityCount >= 90) {
       //pull five star card!!!
       pulledCards.value.push(fiveStarCard[Math.floor(Math.random() * cards.length)])
@@ -33,22 +33,6 @@ function pullTen() {
     }
     console.log(pulledCards) //basically pull 10 random cards and show in console.log
   }
-}
-function pullOne() {
-  if (pityCount >= 90) {
-    //pull five star card!!!
-    pulledCards.value.push(fiveStarCard[Math.floor(Math.random() * cards.length)])
-    pityCount = 0
-  } else {
-    const cardPulled = cards[Math.floor(Math.random() * cards.length)]
-    pulledCards.value.push(cardPulled)
-    if (fiveStarCard.includes(cardPulled)) {
-      pityCount = 0
-    } else {
-      pityCount++
-    }
-  }
-  console.log(pulledCards) //pull one card and show it
 }
 </script>
 
