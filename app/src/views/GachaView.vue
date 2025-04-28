@@ -5,7 +5,7 @@
 </template>
 
 <script setup="ts">
-import GachaSystem from '@/components/GachaSystem.vue'
+import GachaSystem from '@/components/gachaStuff/GachaSystem.vue'
 </script>
 
 <style scoped></style>

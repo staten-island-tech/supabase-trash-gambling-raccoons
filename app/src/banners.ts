@@ -1,4 +1,4 @@
-import { cards } from '../src/Cards.ts'
+import { cards } from "./Cards";
 
 
 const gamebanner = []

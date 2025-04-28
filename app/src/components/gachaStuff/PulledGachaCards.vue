@@ -1,13 +1,13 @@
 <template>
-  <div class="fixed">
-    <img :src="ownedCards.card_image" alt="" srcset="" />
+  <div class="flex">
+    <img :src="ownedCards.card_image" alt="image!" srcset="" />
     <h1>{{ ownedCards.name }}</h1>
   </div>
 </template>
 
 <script setup lang="ts">
-import type { card } from '../Cards.ts'
-interface Props {
+import type { card } from '../../types'
+type Props = {
   ownedCards: card
 }
 defineProps<Props>()
