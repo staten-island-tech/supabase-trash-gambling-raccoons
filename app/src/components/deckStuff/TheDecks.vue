@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import type { deck } from '../ts/types'
+import type { deck } from '../../types'
 import { ref, reactive } from 'vue'
 import DeckCards from './DeckCards.vue'
 //40 cards MAX per deck

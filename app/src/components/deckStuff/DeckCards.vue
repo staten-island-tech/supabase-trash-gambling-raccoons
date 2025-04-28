@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import type { deck } from '../ts/types'
+import type { deck } from '../../types'
 type Props = {
   deckItems: deck
 }

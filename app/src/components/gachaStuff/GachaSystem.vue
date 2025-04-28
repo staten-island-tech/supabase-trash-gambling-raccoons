@@ -9,8 +9,8 @@
 <script setup lang="ts">
 //supposed to pull stuff from supabase
 import { ref } from 'vue'
-import { type card } from '../ts/types'
-import { cards } from '../ts/Cards'
+import { type card } from '../../types'
+import { cards } from '../../../ts/Cards'
 import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
 let pityCount: number = 0
 const pulledCards = ref<card[]>([]) //array for cards that were pulled

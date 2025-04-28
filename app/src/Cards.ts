@@ -1,4 +1,4 @@
-import { type card } from "./types"
+import { type card } from "../src/types"
 
 export const cards: card[] = [
     {
