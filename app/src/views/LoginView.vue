@@ -1,13 +1,17 @@
 <template>
     <div>
 
+<div v-if="makeanaccount = false">
         <input v-model="usernameinput" type="text" ref="username" placeholder="Username">
         <br>
         <input v-model="passwordinput" type="text" ref="password" placeholder="Password">
         <button @click="signinacc">Login In</button>
         <button ref="makeanaccount" @click="IfNoAccount">Make An Account</button>
         <br>
-        <div v-if="makeanaccount">
+    </div>
+        
+
+        <div v-if="makeanaccount = true">
         <input v-model="usernameinput" type="text" ref="createusername" placeholder="Username">
         <br>
         <input v-model="passwordinput" type="text" ref="createpassword" placeholder="Password">
