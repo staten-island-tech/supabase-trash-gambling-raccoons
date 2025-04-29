@@ -1,22 +1,25 @@
 <template>
     <div>
 
-<div v-if="makeanaccount = false">
+<div v-if="!makeanaccount">
         <input v-model="usernameinput" type="text" ref="username" placeholder="Username">
         <br>
         <input v-model="passwordinput" type="text" ref="password" placeholder="Password">
+        <br>
         <button @click="signinacc">Login In</button>
-        <button ref="makeanaccount" @click="IfNoAccount">Make An Account</button>
+        <br>
+        <button @click="IfNoAccount">Make An Account</button>
         <br>
     </div>
         
 
-        <div v-if="makeanaccount = true">
+<div v-else>
         <input v-model="usernameinput" type="text" ref="createusername" placeholder="Username">
         <br>
         <input v-model="passwordinput" type="text" ref="createpassword" placeholder="Password">
         <br>
-        <input v-model="passwordinput" type="text" ref="checkpassword" placeholder="CheckPassword">
+        <input v-model="checkpasswordinput" type="text" ref="checkpassword" placeholder="CheckPassword">
+        <br>
         <button @click="createacc">Create Account</button>
 </div>
         
@@ -32,21 +35,39 @@ import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'fire
  
 const usernameinput = ref('')
 const passwordinput = ref('')
+const checkpasswordinput = ref('')
 const createusername = ref('')
-const createpassword = ref(' ')
-const checkpassword = ref(' ')
+const createpassword = ref('')
+const checkpassword = ref('')
 const makeanaccount = ref(false)
 
 const IfNoAccount = () => {
-    makeanaccount.value != makeanaccount.value
+    makeanaccount.value = true
 }
 
 const createacc = async () => {
-    createUserWithEmailAndPassword(auth, usernameinput.value, passwordinput.value)
+    if (createusername.value != '')
+
+
+
+
+    if (passwordinput.value === checkpasswordinput.value){
+        createUserWithEmailAndPassword(auth, usernameinput.value, passwordinput.value)
+    } else {
+        console.log("error")
+        /* Will make a thing that says that the passwords don't match */
+    }
+
+        
+
+    
+    
     
 }
 
 const signinacc = async () => {
+
+
     signInWithEmailAndPassword(auth, usernameinput.value, passwordinput.value)
 }
 
