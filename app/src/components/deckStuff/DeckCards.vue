@@ -8,12 +8,16 @@
 </template>
 
 <script setup lang="ts">
+<<<<<<< HEAD
 import type { deck } from '../ts/types'
 import CardsInDeck from './CardsInDeck.vue'
 import { ref } from 'vue'
 
 const isClicked = ref(false)
 
+=======
+import type { deck } from '../../types'
+>>>>>>> Haobin
 type Props = {
   deckItems: deck
 }
