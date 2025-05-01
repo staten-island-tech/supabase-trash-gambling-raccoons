@@ -31,6 +31,7 @@ for (let i: number = 0; i < amountThreeStar; i++){
 }
 
 //randomizing four stars
+
 const fourStars = ownedCards.value.filter((star) => star.stars = 4)
 for (let i: number = 0; i < amountfourStars; i++){
     isChecked = ref(false)
@@ -50,3 +51,7 @@ for (let i: number = 0; i < amountfourStars; i++){
 
 //randomize 3 and 4 stars in the owned cards
 //One five star for everyone! Traveler!
+
+//Adding Traveler to card set
+
+ownedCards.value.push()
