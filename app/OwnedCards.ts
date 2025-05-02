@@ -12,7 +12,7 @@ let isChecked = ref(false)
 
 
 //randomizing 3 stars below
-const threeStars = ownedCards.value.filter((star) => star.stars = 3)
+const threeStars: card[] = ownedCards.value.filter((star) => star.stars = 3)
 
 for (let i: number = 0; i < amountThreeStar; i++){
     isChecked = ref(false)
@@ -32,7 +32,7 @@ for (let i: number = 0; i < amountThreeStar; i++){
 
 //randomizing four stars
 
-const fourStars = ownedCards.value.filter((star) => star.stars = 4)
+const fourStars: card[] = ownedCards.value.filter((star) => star.stars = 4)
 for (let i: number = 0; i < amountfourStars; i++){
     isChecked = ref(false)
     let currentCard: card = fourStars[Math.floor(Math.random() * cards.length)]
@@ -54,4 +54,8 @@ for (let i: number = 0; i < amountfourStars; i++){
 
 //Adding Traveler to card set
 
-ownedCards.value.push()
+//get Traveler card
+const Traveler: card[] = ownedCards.value.filter((card) => card.name = "Traveler")
+
+//add Traveler to ownedCards
+ownedCards.value.push(Traveler[0])
