@@ -14,3 +14,14 @@ export type deck = {
     name: string
     cards: card[]
 }
+
+type profile = {
+    email: string;
+    name: string;
+    password: string;
+
+}
+
+export type userdoc = {
+    profile: profile;
+}

@@ -21,6 +21,8 @@
         <input v-model="checkpasswordinput" type="text" ref="checkpassword" placeholder="CheckPassword">
         <br>
         <button @click="createacc">Create Account</button>
+        <br>
+        <button @click="IfNoAccount">Login</button>
 </div>
         
 
@@ -46,17 +48,22 @@ const IfNoAccount = () => {
 }
 
 const createacc = async () => {
-    if (createusername.value != '')
-
-
-
-
-    if (passwordinput.value === checkpasswordinput.value){
+    if (createusername.value != '' && createpassword.value != '' && checkpassword.value != ''){
+        
+        if (passwordinput.value === checkpasswordinput.value){
         createUserWithEmailAndPassword(auth, usernameinput.value, passwordinput.value)
     } else {
-        console.log("error")
-        /* Will make a thing that says that the passwords don't match */
+        console.log("already account or password don't match")
+        /* Will make a thing that says that the passwords don't match */}
+    
+    } else if (createusername.value != '' || createpassword.value != '' || checkpassword.value != ''){
+        console.log('fill out all info')
     }
+
+
+
+
+    
 
         
 
@@ -66,9 +73,11 @@ const createacc = async () => {
 }
 
 const signinacc = async () => {
-
-
     signInWithEmailAndPassword(auth, usernameinput.value, passwordinput.value)
+    .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user.email)
+    })
 }
 
 onMounted(async(): Promise<void>=> {
