@@ -13,348 +13,348 @@ export const cards: card[] = [
         region: "Unidentified Planet",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Jean",
+        description: "The righteous and rigorous Dandelion Knight, and Acting Grand Master of Mondstadt's Knights of Favonius", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Wind",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Mondstadt, Teyvat",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Venti",
+        description: "One of the many bards of Mondstadt, who freely wanders the city's streets and alleys.", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Wind",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Mondstadt, Teyvat",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Albedo",
+        description: "A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Rock",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Mondstadt, Teyvat",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Zhongli",
+        description: "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Rock",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Ningguang",
+        description: "The Tianquan of Liyue Qixing. Her wealth is unsurpassed in all of Teyvat.", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Rock",
         card_image: "string",
         stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Raiden Shogun",
+        description: "Her Excellency, the Almighty, Narukami Ogosho, who promised the people of Inazuma an unchanging Eternity.", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Eletric",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Inazuma, Teyvat",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Yae Miko",
+        description: "Lady Guuji of the Grand Narukami Shrine. Also serves as the editor-in-chief of Yae Publishing House. Unimaginable intelligence and cunning are hidden under her beautiful appearance.", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Eletric",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Inazuma, Teyvat",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Nahida",
+        description: "A caged bird secluded within the confines of the Sanctuary of Surasthana who can only see the world in her dreams.", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Grass",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Sumeru, Teyvat",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Alhaitham",
+        description: "The current scribe of the Sumeru Akademiya, a man endowed with extraodinary intelligence and talent. He lives free — free from the searching eyes of ordinary people, anyway.", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Grass",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Sumeru, Teyvat",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Wanderer",
+        description: "A wayfaring figure whose identity is a mystery. He dresses like a mountain ascetic, but he certainly does not act the part.", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Wind",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Sumeru, Teyvat",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Furina",
+        description: "The absolute focus of the stage of judgment, until the final applause sounds.", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Water",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Fontaine, Teyvat",
     },
     {
-        name: "string",
-        description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        name: "Neuvillette",
+        description: "The Chief Justice of Fontaine, known as the Iudex, is renowned for his unassailable impartiality.", /* gotta think about this  */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Water",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Fontaine, Teyvat",
     },
     {
-        name: "string",
+        name: "Mavuika",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Fire",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Natlan, Teyvat",
     },
     {
-        name: "string",
+        name: "Arlecchino",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Fire",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Snezhnaya, Teyvat",
     },
     {
-        name: "string",
+        name: "Tartaglia",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Fire",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Snezhnaya, Teyvat",
     },
     {
-        name: "string",
+        name: "Aloy",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
+        power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "string",
+        card_type: "Ice",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 5, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Unidentified Planet",
     },
     {
-        name: "string",
+        name: "Arataki Itto",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Rock",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Inazuma, Teyvat",
     },
     {
-        name: "string",
+        name: "Baizhu",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Grass",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
-        name: "string",
+        name: "Beidou",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Eletric",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
-        name: "string",
+        name: "Candace",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Water",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Sumeru, Teyvat",
     },
     {
-        name: "string",
+        name: "Chasca",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Wind",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Natlan, Teyvat",
     },
     {
-        name: "string",
+        name: "Chongyun",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Ice",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
-        name: "string",
+        name: "Citali",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Ice",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Natlan, Teyvat",
     },
     {
-        name: "string",
+        name: "Clorinde",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Eletric",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Fontaine, Teyvat",
     },
     {
-        name: "string",
+        name: "Cyno",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Eletric",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Sumeru, Teyvat",
     },
     {
-        name: "string",
+        name: "Dehya",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Fire",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Sumeru, Teyvat",
     },
     {
-        name: "string",
+        name: "Diluc",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Fire",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4000, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Mondstadt, Teyvat",
     },
     {
-        name: "string",
+        name: "Eula",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Physical",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Mondstadt, Teyvat",
     },
     {
-        name: "string",
+        name: "Freminet",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Physical",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Fontaine, Teyvat",
     },
     {
-        name: "string",
+        name: "Ganyu",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Ice",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
-        name: "string",
+        name: "Kaedehara Kazuha",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Wind",
         card_image: "string",
         stars: 1, /* think about thise later too^2 */
         game: "Honkai: Star Rail",
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Kamisato Ayaka",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -365,7 +365,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Kamisato Ayato",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -376,7 +376,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Kinich",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -387,7 +387,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Lynette",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -398,7 +398,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Lyney",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -409,7 +409,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Mona",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -420,7 +420,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Mualani",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -431,7 +431,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Qiqi",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -442,7 +442,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Sangonomiya Kokomi",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -453,7 +453,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Shenhe",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -464,7 +464,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Sigewinnie",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -475,7 +475,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Wriothesley",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -486,7 +486,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Xianyun",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -497,7 +497,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Xiao",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -508,7 +508,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Xilonen",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -519,7 +519,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Yelan",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -530,7 +530,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Yumemizuki Mizuki",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -541,7 +541,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Iansan",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -552,29 +552,29 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Ororon",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
+        stars: 4, /* think about thise later too^2 */
         game: "Honkai: Star Rail",
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Amber",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
         card_type: "string",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
+        stars: 3, /* think about thise later too^2 */
         game: "Honkai: Star Rail",
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Barbara",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -585,7 +585,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Bennett",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -596,7 +596,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Charlotte",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -607,7 +607,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Chevreuse",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -618,7 +618,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Diona",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -629,7 +629,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Dori",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -640,7 +640,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Emilie",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -651,7 +651,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Faruzan",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -662,7 +662,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Fischl",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -673,7 +673,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Gaming",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -684,7 +684,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Kachina",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -695,7 +695,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Kaveh",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -706,7 +706,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Kirara",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -717,7 +717,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Klee",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -728,7 +728,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Kuki Shinobu",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -739,7 +739,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Lan Yan",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -750,7 +750,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Layla",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -761,7 +761,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Lisa",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -772,7 +772,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Mika",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -783,7 +783,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Navia",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -794,7 +794,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Noelle",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -805,7 +805,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Razor",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -816,7 +816,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Rosaria",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -827,7 +827,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Sayu",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -838,7 +838,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Sethos",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -849,7 +849,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Shikanoin Heizou",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -860,7 +860,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Sucrose",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -871,7 +871,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Thoma",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -882,7 +882,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Varesa",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -893,7 +893,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Xiangling",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -904,7 +904,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Xinqiu",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -915,7 +915,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Xinyan",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -926,7 +926,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Yaoyao",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -937,7 +937,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Yun Jin",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -948,7 +948,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Gorou",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -959,7 +959,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Collei",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -970,7 +970,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Kujou Sara",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -981,7 +981,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Hu Tao",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -992,7 +992,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Keqing",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -1003,7 +1003,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Tighnari",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -1014,7 +1014,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Yanfei",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */
@@ -1025,7 +1025,7 @@ export const cards: card[] = [
         region: "Astral Express",
     },
     {
-        name: "string",
+        name: "Chiori",
         description: "string", /* gotta think about this  */
         power: 1, /* think about this later */
         leader: true, /* think about this later too */

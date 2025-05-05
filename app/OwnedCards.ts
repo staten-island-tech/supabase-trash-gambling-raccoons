@@ -9,46 +9,29 @@ export const ownedCards = ref<card[]>([])
 const amountThreeStar: number = 30;
 const amountfourStars: number = 9
 let isChecked = ref(false)
-
-
-//randomizing 3 stars below
 const threeStars: card[] = ownedCards.value.filter((star) => star.stars = 3)
-
-for (let i: number = 0; i < amountThreeStar; i++){
-    isChecked = ref(false)
-    let currentCard: card = threeStars[Math.floor(Math.random() * cards.length)]
-
-    //count checks how many ownedCards has the randomized card in it. Allows to see only 4 or less duplicates.
-    while (!isChecked){
-        const count: number = ownedCards.value.filter(item => item === currentCard).length
-        if (count < 4){
-            ownedCards.value.push(currentCard)
-            isChecked = ref(true)
-        }else{
-            currentCard = threeStars[Math.floor(Math.random() * cards.length)]
-        }
-    }
-}
-
-//randomizing four stars
-
 const fourStars: card[] = ownedCards.value.filter((star) => star.stars = 4)
-for (let i: number = 0; i < amountfourStars; i++){
-    isChecked = ref(false)
-    let currentCard: card = fourStars[Math.floor(Math.random() * cards.length)]
 
-    //count checks how many ownedCards has the randomized card in it. Allows to see only 4 or less duplicates.
-    while (!isChecked){
-        const count: number = ownedCards.value.filter(item => item === currentCard).length
-        if (count < 4){
-            ownedCards.value.push(currentCard)
-            isChecked = ref(true)
-        }else{
-            currentCard = fourStars[Math.floor(Math.random() * cards.length)]
+function addCards(array: card[], threshold: number){
+    for (let i: number = 0; i < threshold; i++){
+        isChecked = ref(false)
+        let currentCard: card = array[Math.floor(Math.random() * cards.length)]
+    
+        //count checks how many ownedCards has the randomized card in it. Allows to see only 4 or less duplicates.
+        while (!isChecked){
+            const count: number = ownedCards.value.filter(item => item === currentCard).length
+            if (count < 4){
+                ownedCards.value.push(currentCard)
+                isChecked = ref(true)
+            }else{
+                currentCard = array[Math.floor(Math.random() * cards.length)]
+            }
         }
     }
 }
-
+addCards(threeStars, amountThreeStar)
+addCards(fourStars, amountfourStars)
+//randomizing 3 stars below
 //randomize 3 and 4 stars in the owned cards
 //One five star for everyone! Traveler!
 
