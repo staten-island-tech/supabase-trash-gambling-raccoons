@@ -349,350 +349,350 @@ export const cards: card[] = [
         leader: false, /* think about this later too */
         card_type: "Wind",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Inazuma, Teyvat",
     },
     {
         name: "Kamisato Ayaka",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Ice",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Inazuma, Teyvat",
     },
     {
         name: "Kamisato Ayato",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Water",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Inazuma, Teyvat",
     },
     {
         name: "Kinich",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Grass",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Natlan, Teyvat",
     },
     {
         name: "Lynette",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Wind",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Fontaine, Teyvat",
     },
     {
         name: "Lyney",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Fire",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Fontaine, Teyvat",
     },
     {
         name: "Mona",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Water",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Mondstadt, Teyvat",
     },
     {
         name: "Mualani",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Water",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Natlan, Teyvat",
     },
     {
         name: "Qiqi",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Ice",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
         name: "Sangonomiya Kokomi",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Water",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Inazuma, Teyvat",
     },
     {
         name: "Shenhe",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Ice",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
         name: "Sigewinnie",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Water",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Fontaine, Teyvat",
     },
     {
         name: "Wriothesley",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Ice",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Fontaine, Teyvat",
     },
     {
         name: "Xianyun",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Wind",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
         name: "Xiao",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Wind",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
         name: "Xilonen",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Rock",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Natlan, Teyvat",
     },
     {
         name: "Yelan",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Water",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
         name: "Yumemizuki Mizuki",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Wind",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 4, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Inazuma, Teyvat",
     },
     {
         name: "Iansan",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Eletric",
         card_image: "string",
         stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        game: "Genshin Impact",
+        region: "Natlan, Teyvat",
     },
     {
         name: "Ororon",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 4000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Eletric",
         card_image: "string",
         stars: 4, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        game: "Genshin Impact",
+        region: "Natlan, Teyvat",
     },
     {
         name: "Amber",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Fire",
         card_image: "string",
         stars: 3, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        game: "Genshin Impact",
+        region: "Mondstadt, Teyvat",
     },
     {
         name: "Barbara",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Water",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 3, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Mondstadt, Teyvat",
     },
     {
         name: "Bennett",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Fire",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 3, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Mondstadt, Teyvat",
     },
     {
         name: "Charlotte",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Ice",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 3, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Fontaine, Teyvat",
     },
     {
         name: "Chevreuse",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power:  3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Fire",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 3, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Fontaine, Teyvat",
     },
     {
         name: "Diona",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Ice",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 3, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Mondstadt, Teyvat",
     },
     {
         name: "Dori",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Eletric",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 3, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Sumeru, Teyvat",
     },
     {
         name: "Emilie",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Grass",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 3, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Fontaine, Teyvat",
     },
     {
         name: "Faruzan",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Wind",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 3, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Sumeru, Teyvat",
     },
     {
         name: "Fischl",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Eletric",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 3, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Mondstadt, Teyvat",
     },
     {
         name: "Gaming",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Fire",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 3, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Liyue, Teyvat",
     },
     {
         name: "Kachina",
         description: "string", /* gotta think about this  */
-        power: 1, /* think about this later */
-        leader: true, /* think about this later too */
-        card_type: "string",
+        power: 3000, /* think about this later */
+        leader: false, /* think about this later too */
+        card_type: "Rock",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
-        game: "Honkai: Star Rail",
-        region: "Astral Express",
+        stars: 3, /* think about thise later too^2 */
+        game: "Genshin Impact",
+        region: "Natlan, Teyvat",
     },
     {
         name: "Kaveh",
