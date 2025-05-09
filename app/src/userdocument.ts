@@ -1,20 +1,13 @@
-import { doc, updateDoc } from "firebase/firestore"
+import { doc, updateDoc, getDoc } from "firebase/firestore"
 import { db } from "../firebase"
 
-const adddecks = async (uid: string, searchitem) => {
-    try {
-        const userDocRef = doc(db, "users", uid);
-        /* reference user doc */
-
-         await changedoc(userDocRef, {
-            profile: {
-                email: "user@example.com",
-                name: "User Name",
-            },
-            inventory: {
-                decks: []
-            }
-        }) 
+export const getdata = async(userId:string) => {
+    const userDoc = await getDoc(doc(db, "users", userId));
+    if (userDoc.exists()){
+        return userDoc.data();
+    } else {
+        console.log("No user found")
+        return null
     }
 }
 
