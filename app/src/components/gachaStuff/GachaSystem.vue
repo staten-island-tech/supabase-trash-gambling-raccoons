@@ -16,7 +16,6 @@ import { ownedCards } from '../../../OwnedCards.ts'
 import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
 let pityCount: number = 0
 const pulledCards = ref<card[]>([]) //array for cards that were pulled
-let cardPulled: card
 
 let fiveStarCard: card[] = cards.filter((star) => star.stars === 5)
 let fourStarCard: card[] = cards.filter((star) => star.stars === 4)
@@ -33,7 +32,7 @@ function pullAmount(amount: number) {
     } else {
       const RandoStar: number = Math.floor(Math.random() * 101)
       if (RandoStar > 95) {
-        cardPulled = fiveStarCard[Math.floor(Math.random() * cards.length)]
+        let cardPulled = fiveStarCard[Math.floor(Math.random() * cards.length)]
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
         if (fiveStarCard.includes(cardPulled)) {
@@ -42,7 +41,7 @@ function pullAmount(amount: number) {
           pityCount++
         }
       } else if (RandoStar <= 95 && RandoStar > 60) {
-        cardPulled = fourStarCard[Math.floor(Math.random() * cards.length)]
+        let cardPulled = fourStarCard[Math.floor(Math.random() * cards.length)]
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
         if (fiveStarCard.includes(cardPulled)) {
@@ -51,7 +50,7 @@ function pullAmount(amount: number) {
           pityCount++
         }
       } else if (RandoStar <= 60) {
-        cardPulled = threeStarCard[Math.floor(Math.random() * cards.length)]
+        let cardPulled = threeStarCard[Math.floor(Math.random() * cards.length)]
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
         if (fiveStarCard.includes(cardPulled)) {
