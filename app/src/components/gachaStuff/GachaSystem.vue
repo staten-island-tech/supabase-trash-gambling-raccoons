@@ -14,53 +14,57 @@ import { type card } from '../../types'
 import { cards } from '../../Cards'
 import { ownedCards } from '../../../OwnedCards.ts'
 import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
-let pityCount: number = 0
+let pityCount: number = 0 //the pity for five star
 const pulledCards = ref<card[]>([]) //array for cards that were pulled
 
-let fiveStarCard: card[] = cards.filter((star) => star.stars === 5)
-let fourStarCard: card[] = cards.filter((star) => star.stars === 4)
-let threeStarCard: card[] = cards.filter((star) => star.stars === 3)
+const fiveStarCard: card[] = cards.filter((star) => star.stars === 5)
+const fourStarCard: card[] = cards.filter((star) => star.stars === 4)
+const threeStarCard: card[] = cards.filter((star) => star.stars === 3)
 
 function pullAmount(amount: number) {
   for (let i = 0; i < amount; i++) {
+    //for amount pulled
     if (pityCount >= 90) {
+      //issue with five star pulling
       //pull five star card!!!
       let guarateedCard: card = fiveStarCard[Math.floor(Math.random() * cards.length)]
+      while (guarateedCard === undefined) {
+        guarateedCard = fiveStarCard[Math.floor(Math.random() * cards.length)]
+      }
       pulledCards.value.push(guarateedCard)
       ownedCards.value.push(guarateedCard)
       pityCount = 0
     } else {
       const RandoStar: number = Math.floor(Math.random() * 101)
-      if (RandoStar > 95) {
-        let cardPulled = fiveStarCard[Math.floor(Math.random() * cards.length)]
+      if (RandoStar > 99) {
+        //five percent chance for a five star card
+        //pull five star card below
+        let cardPulled: card = fiveStarCard[Math.floor(Math.random() * cards.length)]
+        while (cardPulled === undefined) {
+          //makes sure the cardPulled is defined and not empty
+          cardPulled = fiveStarCard[Math.floor(Math.random() * cards.length)]
+        }
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
-        if (fiveStarCard.includes(cardPulled)) {
-          pityCount = 0
-        } else {
-          pityCount++
+        pityCount = 0
+      } else if (RandoStar <= 99 && RandoStar > 60) {
+        let cardPulled: card = fourStarCard[Math.floor(Math.random() * cards.length)]
+        while (cardPulled === undefined) {
+          cardPulled = fourStarCard[Math.floor(Math.random() * cards.length)]
         }
-      } else if (RandoStar <= 95 && RandoStar > 60) {
-        let cardPulled = fourStarCard[Math.floor(Math.random() * cards.length)]
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
-        if (fiveStarCard.includes(cardPulled)) {
-          pityCount = 0
-        } else {
-          pityCount++
+        pityCount++
+      } else {
+        let cardPulled: card = threeStarCard[Math.floor(Math.random() * cards.length)]
+        while (cardPulled === undefined) {
+          cardPulled = threeStarCard[Math.floor(Math.random() * cards.length)]
         }
-      } else if (RandoStar <= 60) {
-        let cardPulled = threeStarCard[Math.floor(Math.random() * cards.length)]
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
-        if (fiveStarCard.includes(cardPulled)) {
-          pityCount = 0
-        } else {
-          pityCount++
-        }
+        pityCount++
       }
     }
-    console.log(pulledCards) //basically pull 10 random cards and show in console.log
   }
 }
 </script>

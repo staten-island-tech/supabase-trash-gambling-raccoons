@@ -1027,11 +1027,11 @@ export const cards: card[] = [
     {
         name: "Chiori",
         description: "string", /* gotta think about this  */
-        power: 3, /* think about this later */
+        power: 3000, /* think about this later */
         leader: false, /* think about this later too */
         card_type: "Rock",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
+        stars: 3, /* think about thise later too^2 */
         game: "Genshin Impact",
         region: "Inazuma, Teyvat",
     },
