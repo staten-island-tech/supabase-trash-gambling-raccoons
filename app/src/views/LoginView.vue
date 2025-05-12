@@ -31,7 +31,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { auth, db } from '../firebase';
+import { auth } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 /* import { collection, getDocs } from 'firebase/firestore'; */
  
@@ -76,13 +76,12 @@ const signinacc = async () => {
     signInWithEmailAndPassword(auth, usernameinput.value, passwordinput.value)
     .then((userCredential) => {
         const user = userCredential.user;
-        console.log(user.email)
+        console.log(user)
     })
 }
 
-onMounted(async(): Promise<void>=> {
-    
-})
+
+
 
 
 

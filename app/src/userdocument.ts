@@ -1,33 +1,16 @@
-import { doc, updateDoc, getDoc } from "firebase/firestore"
-import { db } from "../firebase"
+import { doc, Timestamp, setDoc, collection } from "firebase/firestore"
+import { auth, db } from "../firebase"
 
-export const getdata = async(userId:string) => {
-    const userDoc = await getDoc(doc(db, "users", userId));
-    if (userDoc.exists()){
-        return userDoc.data();
-    } else {
-        console.log("No user found")
-        return null
+async function additemstouser(item){
+    const userId = auth.currentUser.uid;
+    const itemId = crypto.randomUUID();
+    const itemref = doc(collection(db, `user/${userId}/items`), itemId);
+
+    const itemData = {
+        name: item.name,
+        type: item.type,
+        createAt: Timestamp.now()
     }
+
+    await setDoc(itemref, itemData)
 }
-
-/* 
-users/
-    decks: [
-    {name: name,
-     cards: card[]},
-    {}
-    ]
-    
-
-
-    battlehistory:[
-    {battleID: "Battle 1",
-    battledate: "05-05-2025"
-    },
-    
-    ]
-
-
-
-*/
