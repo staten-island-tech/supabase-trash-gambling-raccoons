@@ -1,5 +1,6 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import type { card } from '@/types'
 
 export const useCounterStore = defineStore('counter', () => {
   const count = ref(0)
@@ -9,4 +10,12 @@ export const useCounterStore = defineStore('counter', () => {
   }
 
   return { count, doubleCount, increment }
+})
+
+export const usePlayerCards = defineStore('yourCards', ()=> {
+  state: () => {
+    return {
+      yourCards: [] as card[]
+    }
+  }
 })
