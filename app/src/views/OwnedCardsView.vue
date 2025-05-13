@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ownedCards />
+    <OwnedCards v-for="card in ownedCards" :card="card" />
   </div>
 </template>
 

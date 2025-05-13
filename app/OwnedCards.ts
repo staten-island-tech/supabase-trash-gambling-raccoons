@@ -1,7 +1,7 @@
 import { type card } from './src/types.ts'
 import {ref} from 'vue'
 import {cards} from './src/Cards.ts'
-export const ownedCards = ref<card[]>([])
+const ownedCards = ref<card[]>([])
 
 //40 cards + 10 DON cards
 //only four duplicates allowed!
@@ -16,6 +16,9 @@ function addCards(array: card[], threshold: number){
     for (let i: number = 0; i < threshold; i++){
         isChecked = ref(false)
         let currentCard: card = array[Math.floor(Math.random() * cards.length)]
+        while (currentCard === undefined){
+            currentCard = array[Math.floor(Math.random() * cards.length)]
+        }
     
         //count checks how many ownedCards has the randomized card in it. Allows to see only 4 or less duplicates.
         while (!isChecked){
@@ -24,7 +27,9 @@ function addCards(array: card[], threshold: number){
                 ownedCards.value.push(currentCard)
                 isChecked = ref(true)
             }else{
-                currentCard = array[Math.floor(Math.random() * cards.length)]
+                while (currentCard === undefined){
+                    currentCard = array[Math.floor(Math.random() * cards.length)]
+                }
             }
         }
     }
@@ -42,3 +47,5 @@ const Traveler: card[] = ownedCards.value.filter((card) => card.name = "Traveler
 
 //add Traveler to ownedCards
 ownedCards.value.push(Traveler[0])
+console.log(ownedCards.value)
+export {ownedCards}
