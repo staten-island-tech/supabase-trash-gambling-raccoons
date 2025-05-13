@@ -33,6 +33,7 @@
 import { ref, onMounted } from 'vue';
 import { auth } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
+import { addUser } from '../userdocument'
 /* import { collection, getDocs } from 'firebase/firestore'; */
  
 const usernameinput = ref('')
@@ -77,6 +78,7 @@ const signinacc = async () => {
     .then((userCredential) => {
         const user = userCredential.user;
         console.log(user)
+        addUser()
     })
 }
 

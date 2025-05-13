@@ -1,16 +1,14 @@
-import { doc, Timestamp, setDoc, collection } from "firebase/firestore"
-import { auth, db } from "../firebase"
+import { doc, collection, addDoc } from "firebase/firestore"
+import { db } from "../firebase"
 
-async function additemstouser(item){
-    const userId = auth.currentUser.uid;
-    const itemId = crypto.randomUUID();
-    const itemref = doc(collection(db, `user/${userId}/items`), itemId);
+const usersCollectionRef = collection(db, 'users');
 
-    const itemData = {
-        name: item.name,
-        type: item.type,
-        createAt: Timestamp.now()
-    }
-
-    await setDoc(itemref, itemData)
+export async function addUser() {
+    const docRef = await addDoc(usersCollectionRef, {
+        name: "Alice",
+        age: 25,
+    });
+    console.log("Document added with ID:", docRef.id); // Outputs the unique ID Firebase generates
 }
+
+
