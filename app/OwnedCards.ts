@@ -6,7 +6,7 @@ const ownedCards = ref<card[]>([])
 //40 cards + 10 DON cards
 //only four duplicates allowed!
 //30 3 stars, 9 4 stars, 1 five star?
-const amountThreeStar: number = 30;
+const amountThreeStar: number = 30
 const amountfourStars: number = 9
 let isChecked = ref(false)
 const threeStars: card[] = ownedCards.value.filter((star) => star.stars = 3)
