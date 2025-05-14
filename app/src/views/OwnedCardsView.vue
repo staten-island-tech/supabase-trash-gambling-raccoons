@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import OwnedCards from '@/components/ownedCardsStuff/OwnedCards.vue'
-import { ownedCards } from '../../OwnedCards'
+import { ownedCards } from '../../OwnedCardsCards.ts'
 </script>
 
 <style scoped></style>

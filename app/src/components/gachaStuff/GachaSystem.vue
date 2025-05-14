@@ -12,7 +12,7 @@
 import { ref } from 'vue'
 import { type card } from '../../types'
 import { cards } from '../../Cards'
-import { ownedCards } from '../../../OwnedCards.ts'
+import { ownedCards } from '../../../OwnedCardsCards.ts'
 import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
 let pityCount: number = 0 //the pity for five star
 const pulledCards = ref<card[]>([]) //array for cards that were pulled

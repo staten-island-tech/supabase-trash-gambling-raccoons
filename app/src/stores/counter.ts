@@ -11,11 +11,3 @@ export const useCounterStore = defineStore('counter', () => {
 
   return { count, doubleCount, increment }
 })
-
-export const usePlayerCards = defineStore('yourCards', ()=> {
-  state: () => {
-    return {
-      yourCards: [] as card[]
-    }
-  }
-})
