@@ -1,5 +1,5 @@
 import { type card } from './src/types.ts'
-import {ref} from 'vue'
+import {ref, onMounted} from 'vue'
 import {cards} from './src/Cards.ts'
 const ownedCards = ref<card[]>([])
 
@@ -36,18 +36,14 @@ function addCards(array: card[], threshold: number){
         }
     }
 }
-addCards(threeStars, amountThreeStar)
-addCards(fourStars, amountfourStars)
+
+
 //randomizing 3 stars below
 //randomize 3 and 4 stars in the owned cards
 //One five star for everyone! Traveler!
 
 //Adding Traveler to card set
 
-//get Traveler card
-const Traveler: card[] = ownedCards.value.filter((card) => card.name = "Traveler")
 
-//add Traveler to ownedCards
-ownedCards.value.push(Traveler[0])
 console.log(ownedCards.value)
 export {ownedCards}

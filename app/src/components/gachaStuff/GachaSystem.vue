@@ -66,6 +66,7 @@ function pullAmount(amount: number) {
       }
     }
   }
+  ownedCards.value.sort()
 }
 </script>
 
