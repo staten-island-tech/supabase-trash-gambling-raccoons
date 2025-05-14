@@ -1,14 +1,17 @@
-import { doc, collection, addDoc } from "firebase/firestore"
-import { db } from "../firebase"
+import { doc, updateDoc} from "firebase/firestore"
 
-const usersCollectionRef = collection(db, 'users');
 
-export async function addUser() {
-    const docRef = await addDoc(usersCollectionRef, {
-        name: "Alice",
-        age: 25,
-    });
-    console.log("Document added with ID:", docRef.id); // Outputs the unique ID Firebase generates
+export async function updateUserDocument(db, userId, updatedData) {
+    try {
+        // Reference to the user's document in Firestore
+        const userDocRef = doc(db, 'users', userId);
+
+        // Update the document with the provided data
+        await updateDoc(userDocRef, updatedData);
+
+        console.log(`User document with ID: ${userId} successfully updated!`);
+    } catch (error) {
+        console.error("Error updating user document: ", error);
+    }
 }
-
 
