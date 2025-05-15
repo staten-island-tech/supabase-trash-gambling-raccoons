@@ -66,7 +66,21 @@ function pullAmount(amount: number) {
       }
     }
   }
-  ownedCards.value.sort()
+  ownedCards.value.sort((a, b) => {
+    //sort cards by name
+    const nameA = a.name.toUpperCase() // ignore upper and lowercase
+    const nameB = b.name.toUpperCase() // ignore upper and lowercase
+    if (nameA < nameB) {
+      return -1
+    }
+    if (nameA > nameB) {
+      return 1
+    }
+
+    // names must be equal
+    return 0
+    //need to fix sorting so it sorts by name specifically
+  })
 }
 </script>
 
