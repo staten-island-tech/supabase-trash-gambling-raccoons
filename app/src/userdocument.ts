@@ -1,17 +1,25 @@
 import { doc, updateDoc} from "firebase/firestore"
+import { ref } from "firebase/database"
+import { database } from "./firebase"
 
 
-export async function updateUserDocument(db, userId, updatedData) {
-    try {
-        // Reference to the user's document in Firestore
-        const userDocRef = doc(db, 'users', userId);
+export async function changeUserDocument(userId, username, password, deck) {
+    const userRef = ref(database, 'users/' + userId)
 
-        // Update the document with the provided data
-        await updateDoc(userDocRef, updatedData);
-
-        console.log(`User document with ID: ${userId} successfully updated!`);
-    } catch (error) {
-        console.error("Error updating user document: ", error);
+    const userData = {
+        username: username,
+        password: password,
+        decks: deck, 
     }
+
+    set(userRef, userData)
+        .then(() => {
+            console.log("sutff")
+        })
+        .catch((error) => {
+            console.error("ohhh no")
+        })
+
+
 }
 

@@ -33,8 +33,8 @@
 import { ref, onMounted } from 'vue';
 import { auth } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
-import { db } from '../firebase';
-import { updateUserDocument } from '@/userdocument';
+import { datastore } from '../firebase';
+import { changeUserDocument } from '@/userdocument';
 
 
 const usernameinput = ref('')
@@ -82,7 +82,7 @@ const signinacc = async () => {
     })
 }
 
-updateUserDocument()
+changeUserDocument(datastore, )
 
 
 
