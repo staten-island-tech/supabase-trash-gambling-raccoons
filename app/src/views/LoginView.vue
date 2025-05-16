@@ -31,9 +31,8 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { auth } from '../firebase';
+import { auth, database } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
-import { datastore } from '../firebase';
 import { changeUserDocument } from '@/userdocument';
 
 
@@ -61,17 +60,6 @@ const createacc = async () => {
     } else if (createusername.value != '' || createpassword.value != '' || checkpassword.value != ''){
         console.log('fill out all info')
     }
-
-
-
-
-    
-
-        
-
-    
-    
-    
 }
 
 const signinacc = async () => {
@@ -79,10 +67,12 @@ const signinacc = async () => {
     .then((userCredential) => {
         const user = userCredential.user;
         console.log(user)
+        changeUserDocument(user.uid, usernameinput.value, passwordinput.value, [])
+
+
     })
 }
 
-changeUserDocument(datastore, )
 
 
 

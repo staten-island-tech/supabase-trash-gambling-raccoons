@@ -1,25 +1,21 @@
 import { doc, updateDoc} from "firebase/firestore"
-import { ref } from "firebase/database"
+import { ref, set } from "firebase/database"
 import { database } from "./firebase"
+import type { deck } from "./types"
 
 
-export async function changeUserDocument(userId, username, password, deck) {
+export async function changeUserDocument(userId:string, username:string, password:string, decks:deck[]) {
     const userRef = ref(database, 'users/' + userId)
 
     const userData = {
         username: username,
         password: password,
-        decks: deck, 
+        decks: decks, 
     }
 
     set(userRef, userData)
         .then(() => {
-            console.log("sutff")
+            console.log("setting doc")
         })
-        .catch((error) => {
-            console.error("ohhh no")
-        })
-
-
 }
 
