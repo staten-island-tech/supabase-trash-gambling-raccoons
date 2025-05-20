@@ -3,7 +3,14 @@
     <button type="submit" @click="isClicked = !isClicked">{{ deckItems.name }}</button>
     <h1 v-if="isClicked">Your Cards</h1>
     <CardsInDeck v-if="isClicked" v-for="card in deckItems.cards" :deckItems="card" />
-    <OwnedCardsButtons v-if="isClicked" v-for="card in ownedCards" :cardItem="card" />
+
+    <OwnedCardsButtons
+      v-if="isClicked"
+      v-for="card in ownedCards"
+      :cardItem="card"
+      :deckItem="deckItems"
+    />
+
     <h1 v-else>Click {{ deckItems.name }} to view cards</h1>
   </div>
 </template>

@@ -10,8 +10,6 @@
 import { ref } from 'vue'
 import DeckCards from './DeckCards.vue'
 import { decks } from '@/decks'
-import { ownedCards } from '../../../OwnedCardsCards'
-import OwnedCardsButtons from './OwnedCardsButtons.vue'
 //40 cards MAX per deck
 const nameOfDeck = ref('')
 function createDeck() {
