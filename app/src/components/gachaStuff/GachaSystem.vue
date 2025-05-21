@@ -14,6 +14,7 @@ import { type card } from '../../types'
 import { cards } from '../../Cards'
 import { ownedCards } from '../../../OwnedCardsCards.ts'
 import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
+import { decks } from '@/decks.ts'
 let pityCount: number = 0 //the pity for five star
 const pulledCards = ref<card[]>([]) //array for cards that were pulled
 
@@ -33,6 +34,7 @@ function pullAmount(amount: number) {
       }
       pulledCards.value.push(guarateedCard)
       ownedCards.value.push(guarateedCard)
+      decks.forEach((deck) => deck.cardsNotIn.push(guarateedCard))
       pityCount = 0
     } else {
       const RandoStar: number = Math.floor(Math.random() * 101)
@@ -47,7 +49,7 @@ function pullAmount(amount: number) {
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
         pityCount = 0
-      } else if (RandoStar <= 99 && RandoStar > 60) {
+      } else if (RandoStar <= 99 && RandoStar > 80) {
         let cardPulled: card = fourStarCard[Math.floor(Math.random() * cards.length)]
         while (cardPulled === undefined) {
           cardPulled = fourStarCard[Math.floor(Math.random() * cards.length)]

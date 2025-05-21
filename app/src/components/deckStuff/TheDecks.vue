@@ -16,7 +16,7 @@ function createDeck() {
   //figure out how to push names and empty card array for later inputs into deck
   if (decks.every((stuff) => !stuff.name.includes(nameOfDeck.value))) {
     //send warning message that it already exists
-    decks.push({ name: nameOfDeck.value, cards: [] })
+    decks.push({ name: nameOfDeck.value, cards: [], cardsNotIn: [] })
   } else {
     console.log('You already have this deck')
   }
