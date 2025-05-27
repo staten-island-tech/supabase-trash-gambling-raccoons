@@ -11,7 +11,7 @@
 
     <OwnedCardsButtons
       v-if="isClicked"
-      v-for="card in deckItems.cardsNotIn"
+      v-for="card in ownedCards"
       :cardItem="card"
       :deckItem="deckItems"
     />
@@ -23,6 +23,7 @@
 <script setup lang="ts">
 import type { deck } from '@/types'
 import CardsInDeck from './CardsInDeck.vue'
+import { ownedCards } from '../../../OwnedCardsCards'
 import OwnedCardsButtons from './OwnedCardsButtons.vue'
 import { ref } from 'vue'
 const isClicked = ref(false)
