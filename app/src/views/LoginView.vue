@@ -49,17 +49,22 @@ const IfNoAccount = () => {
 }
 
 const createacc = async () => {
-    if (createusername.value != '' && createpassword.value != '' && checkpassword.value != ''){
-        
-        if (passwordinput.value === checkpasswordinput.value){
-        createUserWithEmailAndPassword(auth, usernameinput.value, passwordinput.value)
-    } else {
-        console.log("already account or password don't match")
-        /* Will make a thing that says that the passwords don't match */}
-    
-    } else if (createusername.value != '' || createpassword.value != '' || checkpassword.value != ''){
+    if (usernameinput.value === '' || passwordinput.value === ''){
         console.log('fill out all info')
+        return
+    } else {
+        if (createpassword.value !== checkpassword.value){
+            console.log('passwords dont match')
+            return
+        }
     }
+
+    try{
+        await createUserWithEmailAndPassword(auth, createusername.value, createpassword.value)
+    } catch (error){
+        console.log("error")
+    }
+
 }
 
 const signinacc = async () => {
@@ -67,14 +72,8 @@ const signinacc = async () => {
     .then((userCredential) => {
         const user = userCredential.user;
         console.log(user)
-        changeUserDocument(user.uid, usernameinput.value, passwordinput.value, [])
-
-
     })
 }
-
-
-
 
 
 
