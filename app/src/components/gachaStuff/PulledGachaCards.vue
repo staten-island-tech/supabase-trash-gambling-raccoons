@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="">
     <h1>{{ ownedCards.name }}</h1>
   </div>
 </template>

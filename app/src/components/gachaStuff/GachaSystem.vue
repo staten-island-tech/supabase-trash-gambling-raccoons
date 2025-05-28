@@ -1,9 +1,11 @@
 <template>
   <div>
     <h1>Pity Count : {{ pityCount }}</h1>
-    <button type="submit" @click="pullAmount(10)">Pull 10X!</button>
-    <button type="submit" @click="pullAmount(1)">Pull 1X!</button>
-    <PulledGachaCards v-for="card in pulledCards" :ownedCards="card" />
+    <button class="outline rounded" type="submit" @click="pullAmount(10)">Pull 10X!</button>
+    <button class="outline rounded" type="submit" @click="pullAmount(1)">Pull 1X!</button>
+    <div class="flex flex-wrap">
+      <PulledGachaCards class="w-[20%]" v-for="card in pulledCards" :ownedCards="card" />
+    </div>
   </div>
 </template>
 
