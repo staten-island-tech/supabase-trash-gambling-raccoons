@@ -1,10 +1,25 @@
 <template>
   <div>
     <h1>Pity Count : {{ pityCount }}</h1>
-    <button class="outline rounded" type="submit" @click="pullAmount(10)">Pull 10X!</button>
-    <button class="outline rounded" type="submit" @click="pullAmount(1)">Pull 1X!</button>
+
+    <div class="flex justify-evenly items-center flex-wrap w-[100%] m-auto">
+      <PulledGachaCards v-for="card in pulledCards" :ownedCards="card" />
+    </div>
     <div class="flex flex-wrap">
-      <PulledGachaCards class="w-[20%]" v-for="card in pulledCards" :ownedCards="card" />
+      <button
+        class="rounded bg-sky-600 text-center w-[100%] text-neutral-50 m-2"
+        type="submit"
+        @click="pullAmount(10)"
+      >
+        Pull 10X!
+      </button>
+      <button
+        class="rounded bg-sky-600 text-center w-[100%] text-neutral-50 m-2"
+        type="submit"
+        @click="pullAmount(1)"
+      >
+        Pull 1X!
+      </button>
     </div>
   </div>
 </template>
@@ -25,6 +40,7 @@ const fourStarCard: card[] = cards.filter((star) => star.stars === 4)
 const threeStarCard: card[] = cards.filter((star) => star.stars === 3)
 
 function pullAmount(amount: number) {
+  pulledCards.value = []
   for (let i = 0; i < amount; i++) {
     //for amount pulled
     if (pityCount >= 90) {

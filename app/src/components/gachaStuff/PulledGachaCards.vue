@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="w-[20%] text-center">
     <h1>{{ ownedCards.name }}</h1>
   </div>
 </template>
