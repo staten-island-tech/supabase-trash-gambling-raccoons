@@ -2,9 +2,9 @@
     <div>
 
 <div v-if="!makeanaccount">
-        <input v-model="usernameinput" type="text" ref="username" placeholder="Username">
+        <input v-model="usernameInput" type="text" ref="username" placeholder="Username">
         <br>
-        <input v-model="passwordinput" type="text" ref="password" placeholder="Password">
+        <input v-model="passwordInput" type="text" ref="password" placeholder="Password">
         <br>
         <button @click="signinacc">Login In</button>
         <br>
@@ -14,11 +14,11 @@
         
 
 <div v-else>
-        <input v-model="usernameinput" type="text" ref="createusername" placeholder="Username">
+        <input v-model="usernameInput" type="text" ref="createusername" placeholder="Username">
         <br>
-        <input v-model="passwordinput" type="text" ref="createpassword" placeholder="Password">
+        <input v-model="passwordInput" type="text" ref="createpassword" placeholder="Password">
         <br>
-        <input v-model="checkpasswordinput" type="text" ref="checkpassword" placeholder="CheckPassword">
+        <input v-model="checkPassword" type="text" ref="checkpassword" placeholder="CheckPassword">
         <br>
         <button @click="createacc">Create Account</button>
         <br>
@@ -35,10 +35,12 @@ import { auth, database } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { changeUserDocument } from '@/userdocument';
 
+const usernameInput = ref('');
+const passwordInput = ref('');
+const checkPassword = ref('');
 
-const usernameinput = ref('')
-const passwordinput = ref('')
-const checkpasswordinput = ref('')
+const username = ref('')
+const password = ref('')
 const createusername = ref('')
 const createpassword = ref('')
 const checkpassword = ref('')
@@ -49,26 +51,19 @@ const IfNoAccount = () => {
 }
 
 const createacc = async () => {
-    if (usernameinput.value === '' || passwordinput.value === ''){
-        console.log('fill out all info')
-        return
-    } else {
-        if (createpassword.value !== checkpassword.value){
-            console.log('passwords dont match')
-            return
+    if (createusername.value != '' ){
+        if (createpassword.value != ''){
+            if(checkpassword.value != ''){
+                await createUserWithEmailAndPassword(auth, createusername.value, checkpassword.value)
+            }
         }
-    }
+    
+    }}
+    
 
-    try{
-        await createUserWithEmailAndPassword(auth, createusername.value, createpassword.value)
-    } catch (error){
-        console.log("error")
-    }
-
-}
 
 const signinacc = async () => {
-    signInWithEmailAndPassword(auth, usernameinput.value, passwordinput.value)
+    signInWithEmailAndPassword(auth, username.value, password.value)
     .then((userCredential) => {
         const user = userCredential.user;
         console.log(user)
