@@ -3,7 +3,7 @@
     <h1>Pity Count : {{ pityCount }}</h1>
 
     <div class="flex justify-evenly items-center flex-wrap w-[100%] m-auto">
-      <PulledGachaCards v-for="card in pulledCards" :ownedCards="card" />
+      <PulledGachaCards v-for="card in pulledCards" :ownedCard="card" />
     </div>
     <div class="flex flex-wrap">
       <button
