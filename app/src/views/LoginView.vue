@@ -2,9 +2,9 @@
     <div>
 
 <div v-if="!makeanaccount">
-        <input v-model="usernameInput" type="text" ref="username" placeholder="Username">
+        <input v-model="usernameInput" type="text" placeholder="Username">
         <br>
-        <input v-model="passwordInput" type="text" ref="password" placeholder="Password">
+        <input v-model="passwordInput" type="text" placeholder="Password">
         <br>
         <button @click="signinacc">Login In</button>
         <br>
@@ -14,11 +14,11 @@
         
 
 <div v-else>
-        <input v-model="usernameInput" type="text" ref="createusername" placeholder="Username">
+        <input v-model="usernameInput" type="text" placeholder="Username">
         <br>
-        <input v-model="passwordInput" type="text" ref="createpassword" placeholder="Password">
+        <input v-model="passwordInput" type="text" placeholder="Password">
         <br>
-        <input v-model="checkPassword" type="text" ref="checkpassword" placeholder="CheckPassword">
+        <input v-model="checkpassword" type="text" placeholder="CheckPassword">
         <br>
         <button @click="createacc">Create Account</button>
         <br>
@@ -30,19 +30,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 import { auth, database } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
-import { changeUserDocument } from '@/userdocument';
+import { adddatatouserdoc } from '@/userdocument';
+
 
 const usernameInput = ref('');
 const passwordInput = ref('');
-const checkPassword = ref('');
-
-const username = ref('')
-const password = ref('')
-const createusername = ref('')
-const createpassword = ref('')
 const checkpassword = ref('')
 const makeanaccount = ref(false)
 
@@ -51,23 +46,29 @@ const IfNoAccount = () => {
 }
 
 const createacc = async () => {
-    if (createusername.value != '' ){
-        if (createpassword.value != ''){
-            if(checkpassword.value != ''){
-                await createUserWithEmailAndPassword(auth, createusername.value, checkpassword.value)
-            }
-        }
-    
-    }}
-    
+    if(!usernameInput.value || !passwordInput.value || !checkpassword.value){
+        console.log("Fill out all inputs")
+        return
+    } else if(passwordInput.value !== checkpassword.value){
+        console.log("passwords don't match")
+        return
+    }
 
-
-const signinacc = async () => {
-    signInWithEmailAndPassword(auth, username.value, password.value)
-    .then((userCredential) => {
+    try {
+        await createUserWithEmailAndPassword(auth, usernameInput.value, passwordInput.value)
+        .then((userCredential) => {
         const user = userCredential.user;
         console.log(user)
+        adddatatouserdoc(user.uid, user.email, [])
     })
+    } catch(error){
+        console.log("error")
+    }
+}
+
+const signinacc = async () => {
+    signInWithEmailAndPassword(auth, usernameInput.value, passwordInput.value)
+    console.log(database)
 }
 
 

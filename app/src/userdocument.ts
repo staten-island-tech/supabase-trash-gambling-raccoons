@@ -4,12 +4,11 @@ import { database } from "./firebase"
 import type { deck } from "./types"
 
 
-export async function changeUserDocument(userId:string, username:string, password:string, decks:deck[]) {
+export async function adddatatouserdoc(userId:string, username:string, decks:deck[]) {
     const userRef = ref(database, 'users/' + userId)
 
     const userData = {
         username: username,
-        password: password,
         decks: decks, 
     }
 
