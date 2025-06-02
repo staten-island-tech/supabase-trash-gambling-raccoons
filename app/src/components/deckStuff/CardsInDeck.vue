@@ -1,5 +1,12 @@
 <template>
-  <div>
+  <div
+    :class="{
+      'w-[18%] text-center rounded-full m-[1%]': true,
+      'bg-blue-500': cardItem.stars === 3,
+      'bg-purple-500': cardItem.stars === 4,
+      'bg-yellow-500': cardItem.stars === 5,
+    }"
+  >
     <p>{{ cardItem.name }}</p>
     <img :src="cardItem.card_image" alt="Image of your card" />
     <button type="submit" @click="removeCard(cardItem, deckName.name)">Remove Card</button>

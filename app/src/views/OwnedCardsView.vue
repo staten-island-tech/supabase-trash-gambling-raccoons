@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-wrap">
     <OwnedCards v-for="card in ownedCards" :card="card" />
   </div>
 </template>

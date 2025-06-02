@@ -1,7 +1,23 @@
 <template>
-  <div class="flex">
-    <p>{{ cardItem.name }}</p>
-    <button type="submit" @click="addCard(cardItem, deckItem.name)">Add Card</button>
+  <div
+    :class="{
+      'w-[18%] text-center rounded-full m-[1%] flex items-center': true,
+      'bg-blue-500': cardItem.stars === 3,
+      'bg-purple-500': cardItem.stars === 4,
+      'bg-yellow-500': cardItem.stars === 5,
+    }"
+  >
+    <div class="w-[90%]">
+      <p>{{ cardItem.name }}</p>
+      <p>Stars: {{ cardItem.stars }}</p>
+      <p>Type: {{ cardItem.card_type }}</p>
+      <p>Power: {{ cardItem.power }}</p>
+    </div>
+    <div class="w-[5%] h-[5%]">
+      <button type="submit" class="bg-white rounded" @click="addCard(cardItem, deckItem.name)">
+        Add Card
+      </button>
+    </div>
   </div>
 </template>
 

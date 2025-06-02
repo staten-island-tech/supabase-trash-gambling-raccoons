@@ -6,7 +6,9 @@ import { RouterLink, RouterView } from 'vue-router'
   <div class="bg-blue-200">
     <RouterView />
     <header>
-      <div class="wrapper">
+      <div
+        class="wrapper fixed bottom-0 bg-white justify-evenly items-center flex-wrap w-[100%] m-auto"
+      >
         <nav>
           <RouterLink to="/login">Login</RouterLink>
           <RouterLink to="/gacha">Gacha</RouterLink>

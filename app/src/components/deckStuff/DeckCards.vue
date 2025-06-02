@@ -1,22 +1,27 @@
 <template>
   <div class="deck">
-    <button type="submit" @click="isClicked = !isClicked">{{ deckItems.name }}</button>
+    <button type="submit" class="bg-white rounded" @click="isClicked = !isClicked">
+      {{ deckItems.name }}
+    </button>
     <h1 v-if="isClicked">Your Cards</h1>
-    <CardsInDeck
-      v-if="isClicked"
-      v-for="card in deckItems.cards"
-      :cardItem="card"
-      :deckName="deckItems"
-    />
+    <div class="flex flex-wrap">
+      <CardsInDeck
+        v-if="isClicked"
+        v-for="card in deckItems.cards"
+        :cardItem="card"
+        :deckName="deckItems"
+      />
+    </div>
+    <div class="flex flex-wrap">
+      <OwnedCardsButtons
+        v-if="isClicked"
+        v-for="card in ownedCards"
+        :cardItem="card"
+        :deckItem="deckItems"
+      />
 
-    <OwnedCardsButtons
-      v-if="isClicked"
-      v-for="card in ownedCards"
-      :cardItem="card"
-      :deckItem="deckItems"
-    />
-
-    <h1 v-else>Click {{ deckItems.name }} to view cards</h1>
+      <h1 v-else>Click {{ deckItems.name }} to view cards</h1>
+    </div>
   </div>
 </template>
 

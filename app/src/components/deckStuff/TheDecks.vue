@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input v-model="nameOfDeck" />
+    <input class="border-2" v-model="nameOfDeck" />
     <button type="submit" @click="createDeck">Create Deck</button>
     <DeckCards v-for="deck in decks" :deckItems="deck" />
   </div>
