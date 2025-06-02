@@ -36,7 +36,6 @@ import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'fire
 import { adddatatouserdoc } from '@/userdocument';
 import router from '@/router';
 import { useAuthStore } from '@/stores/auth';
-import { log } from 'console';
 
 const loginornot = useAuthStore()
 
@@ -64,7 +63,7 @@ const createacc = async () => {
         .then((userCredential) => {
         const user = userCredential.user;
         console.log(user)
-        adddatatouserdoc(user.uid, user.email, [])
+        adddatatouserdoc(user.uid, user.email!, [], [])
     })
     } catch(error){
         console.log("error")
@@ -75,9 +74,9 @@ const signinacc = async () => {
     signInWithEmailAndPassword(auth, usernameInput.value, passwordInput.value)
     .then((userCredential) => {
         const user = userCredential.user;
-        loginornot.account.push(user.email)
-        console.log(user)
-
+        console.log(user.email)
+        loginornot.account.push(user.email!)
+        console.log(loginornot.account)
         loginornot.login()
     })
 
