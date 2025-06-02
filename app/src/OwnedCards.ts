@@ -1,6 +1,6 @@
-import { type card } from './src/types.ts'
+import { type card } from './types.js'
 import {ref} from 'vue'
-import {cards} from './src/Cards.ts'
+import {cards} from './Cards.js'
 export const ownedCards = ref<card[]>([])
 
 //40 cards + 10 DON cards

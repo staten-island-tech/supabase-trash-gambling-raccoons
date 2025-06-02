@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import { useAuthStore } from './stores/auth'
+
 </script>
 
 <template>
   <header>
     <div class="wrapper">
       <nav>
+        <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/login">Login</RouterLink>
         <RouterLink to="/gacha">Gacha</RouterLink>
         <RouterLink to="/deck">Deck</RouterLink>

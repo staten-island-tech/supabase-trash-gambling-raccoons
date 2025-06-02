@@ -4,6 +4,8 @@ import { ref } from 'vue'
 export const useAuthStore = defineStore('auth', () => {
     const isLoggedin = ref(false)
 
+    const account = ref([])
+
     function login() {
         isLoggedin.value = true
     }
@@ -12,5 +14,5 @@ export const useAuthStore = defineStore('auth', () => {
         isLoggedin.value = false
     }
 
-    return{ isLoggedin, login, logout}
+    return{isLoggedin, login, logout, account}
 })
