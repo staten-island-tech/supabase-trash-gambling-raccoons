@@ -1,5 +1,17 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import { useAuthStore } from './stores/auth'
+
+const authStore = useAuthStore()
+
+const routes = [{path:'/'}]
+
+function areyoulogin(){
+  if(!authStore.isLoggedin){
+
+  }
+}
+
 
 </script>
 
