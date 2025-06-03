@@ -5,7 +5,7 @@
     <div class="flex justify-evenly items-center flex-wrap w-[100%] m-auto">
       <PulledGachaCards v-for="card in pulledCards" :ownedCard="card" />
     </div>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap fixed top-[50%] w-[100%]">
       <button
         class="rounded bg-sky-600 text-center w-[100%] text-neutral-50 m-2"
         type="submit"
@@ -29,15 +29,14 @@
 import { ref } from 'vue'
 import { type card } from '../../types'
 import { cards } from '../../Cards'
-<<<<<<< HEAD
-import { ownedCards } from '../../../OwnedCardsCards.ts'
-=======
-import { ownedCards } from '../../OwnedCards'
->>>>>>> Haobin
+import { ownedCards } from '@/OwnedCards.ts'
 import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
+import { useAuthStore } from '@/stores/auth'
 import { decks } from '@/decks.ts'
 let pityCount: number = 0 //the pity for five star
 const pulledCards = ref<card[]>([]) //array for cards that were pulled
+
+const authStore = useAuthStore()
 
 const fiveStarCard: card[] = cards.filter((star) => star.stars === 5)
 const fourStarCard: card[] = cards.filter((star) => star.stars === 4)
@@ -56,7 +55,6 @@ function pullAmount(amount: number) {
       }
       pulledCards.value.push(guarateedCard)
       ownedCards.value.push(guarateedCard)
-      decks.forEach((deck) => deck.cardsNotIn.push(guarateedCard))
       pityCount = 0
     } else {
       const RandoStar: number = Math.floor(Math.random() * 101)
@@ -70,7 +68,6 @@ function pullAmount(amount: number) {
         }
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
-        decks.forEach((deck) => deck.cardsNotIn.push(cardPulled))
         pityCount = 0
       } else if (RandoStar <= 99 && RandoStar > 80) {
         let cardPulled: card = fourStarCard[Math.floor(Math.random() * cards.length)]
@@ -79,7 +76,6 @@ function pullAmount(amount: number) {
         }
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
-        decks.forEach((deck) => deck.cardsNotIn.push(cardPulled))
         pityCount++
       } else {
         let cardPulled: card = threeStarCard[Math.floor(Math.random() * cards.length)]
@@ -88,7 +84,6 @@ function pullAmount(amount: number) {
         }
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
-        decks.forEach((deck) => deck.cardsNotIn.push(cardPulled))
         pityCount++
       }
     }

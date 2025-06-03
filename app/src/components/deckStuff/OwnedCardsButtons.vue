@@ -1,10 +1,7 @@
 <template>
   <div
     :class="{
-      'w-[18%] text-center rounded-full m-[1%] flex items-center': true,
-      'bg-blue-500': cardItem.stars === 3,
-      'bg-purple-500': cardItem.stars === 4,
-      'bg-yellow-500': cardItem.stars === 5,
+      'w-[18%] text-center rounded-full m-[1%] flex items-center bg-blue-400': true,
     }"
   >
     <div class="w-[90%]">

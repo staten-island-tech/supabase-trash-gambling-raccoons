@@ -1,9 +1,13 @@
 <template>
   <div class="deck">
-    <button type="submit" class="bg-white rounded" @click="isClicked = !isClicked">
+    <button
+      type="submit"
+      class="bg-white rounded text-center w-[100%]"
+      @click="isClicked = !isClicked"
+    >
       {{ deckItems.name }}
     </button>
-    <h1 v-if="isClicked">Your Cards</h1>
+    <h1 v-if="isClicked" class="text-center bg-white">Your Cards</h1>
     <div class="flex flex-wrap">
       <CardsInDeck
         v-if="isClicked"
@@ -12,10 +16,11 @@
         :deckName="deckItems"
       />
     </div>
+    <h1 v-if="isClicked" class="text-center bg-white">Cards to Add</h1>
     <div class="flex flex-wrap">
       <OwnedCardsButtons
         v-if="isClicked"
-        v-for="card in ownedCards"
+        v-for="card in uniqueCard"
         :cardItem="card"
         :deckItem="deckItems"
       />
@@ -28,10 +33,12 @@
 <script setup lang="ts">
 import type { deck } from '@/types'
 import CardsInDeck from './CardsInDeck.vue'
-import { ownedCards } from '../../../OwnedCardsCards'
+import { ownedCards } from '@/OwnedCards.ts'
 import OwnedCardsButtons from './OwnedCardsButtons.vue'
 import { ref } from 'vue'
 const isClicked = ref(false)
+
+const uniqueCard = new Set(ownedCards.value)
 
 type Props = {
   deckItems: deck
