@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+
 </script>
 
 <template>
+<<<<<<< HEAD
   <div class="bg-blue-200">
     <RouterView />
     <header>
@@ -18,6 +20,20 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
     </header>
   </div>
+=======
+  <header>
+    <div class="wrapper">
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/login">Login</RouterLink>
+        <RouterLink to="/gacha">Gacha</RouterLink>
+        <RouterLink to="/deck">Deck</RouterLink>
+      </nav>
+    </div>
+  </header>
+
+  <RouterView />
+>>>>>>> Haobin
 </template>
 
 <style scoped></style>

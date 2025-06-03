@@ -16,7 +16,7 @@ export type deck = {
     cardsNotIn: card[]
 }
 
-type profile = {
+export type profile = {
     email: string;
     name: string;
     password: string;

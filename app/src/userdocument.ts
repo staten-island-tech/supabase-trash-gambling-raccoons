@@ -1,40 +1,21 @@
-import { doc, updateDoc } from "firebase/firestore"
-import { db } from "../firebase"
+import { doc, updateDoc} from "firebase/firestore"
+import { ref, set } from "firebase/database"
+import { database } from "./firebase"
+import type { deck, card } from "./types"
 
-const adddecks = async (uid: string, searchitem) => {
-    try {
-        const userDocRef = doc(db, "users", uid);
-        /* reference user doc */
 
-         await changedoc(userDocRef, {
-            profile: {
-                email: "user@example.com",
-                name: "User Name",
-            },
-            inventory: {
-                decks: []
-            }
-        }) 
+export async function adddatatouserdoc(userId:string, username:string, decks:deck[], cards:card[]) {
+    const userRef = ref(database, 'users/' + userId)
+
+    const userData = {
+        username: username,
+        decks: decks, 
+        cards: cards
     }
+
+    set(userRef, userData)
+        .then(() => {
+            console.log("setting doc")
+        })
 }
 
-/* 
-users/
-    decks: [
-    {name: name,
-     cards: card[]},
-    {}
-    ]
-    
-
-
-    battlehistory:[
-    {battleID: "Battle 1",
-    battledate: "05-05-2025"
-    },
-    
-    ]
-
-
-
-*/

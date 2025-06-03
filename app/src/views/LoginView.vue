@@ -1,10 +1,10 @@
 <template>
-  <!-- <div>
+    <div>
 
 <div v-if="!makeanaccount">
-        <input v-model="usernameinput" type="text" ref="username" placeholder="Username">
+        <input v-model="usernameInput" type="text" placeholder="Username">
         <br>
-        <input v-model="passwordinput" type="text" ref="password" placeholder="Password">
+        <input v-model="passwordInput" type="text" placeholder="Password">
         <br>
         <button @click="signinacc">Login In</button>
         <br>
@@ -14,11 +14,11 @@
         
 
 <div v-else>
-        <input v-model="usernameinput" type="text" ref="createusername" placeholder="Username">
+        <input v-model="usernameInput" type="text" placeholder="Username">
         <br>
-        <input v-model="passwordinput" type="text" ref="createpassword" placeholder="Password">
+        <input v-model="passwordInput" type="text" placeholder="Password">
         <br>
-        <input v-model="checkpasswordinput" type="text" ref="checkpassword" placeholder="CheckPassword">
+        <input v-model="checkpassword" type="text" placeholder="CheckPassword">
         <br>
         <button @click="createacc">Create Account</button>
         <br>
@@ -26,53 +26,69 @@
 </div>
         
 
-    </div> -->
+    </div>
 </template>
 
 <script setup lang="ts">
-// import { ref, onMounted } from 'vue';
-// import { auth, db } from '../firebase';
-// import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
-// /* import { collection, getDocs } from 'firebase/firestore'; */
+import { ref } from 'vue';
+import { auth, database } from '../firebase';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
+import { adddatatouserdoc } from '@/userdocument';
+import router from '@/router';
+import { useAuthStore } from '@/stores/auth';
 
-// const usernameinput = ref('')
-// const passwordinput = ref('')
-// const checkpasswordinput = ref('')
-// const createusername = ref('')
-// const createpassword = ref('')
-// const checkpassword = ref('')
-// const makeanaccount = ref(false)
+const loginornot = useAuthStore()
 
-// const IfNoAccount = () => {
-//     makeanaccount.value = true
-// }
 
-// const createacc = async () => {
-//     if (createusername.value != '' && createpassword.value != '' && checkpassword.value != ''){
+const usernameInput = ref('');
+const passwordInput = ref('');
+const checkpassword = ref('')
+const makeanaccount = ref(false)
 
-//         if (passwordinput.value === checkpasswordinput.value){
-//         createUserWithEmailAndPassword(auth, usernameinput.value, passwordinput.value)
-//     } else {
-//         console.log("already account or password don't match")
-//         /* Will make a thing that says that the passwords don't match */}
+const IfNoAccount = () => {
+    makeanaccount.value = true
+}
 
-//     } else if (createusername.value != '' || createpassword.value != '' || checkpassword.value != ''){
-//         console.log('fill out all info')
-//     }
+const createacc = async () => {
+    if(!usernameInput.value || !passwordInput.value || !checkpassword.value){
+        console.log("Fill out all inputs")
+        return
+    } else if(passwordInput.value !== checkpassword.value){
+        console.log("passwords don't match")
+        return
+    }
 
-// }
+    try {
+        await createUserWithEmailAndPassword(auth, usernameInput.value, passwordInput.value)
+        .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user)
+        adddatatouserdoc(user.uid, user.email!, [], [])
+    })
+    } catch(error){
+        console.log("error")
+    }
+}
 
-// const signinacc = async () => {
-//     signInWithEmailAndPassword(auth, usernameinput.value, passwordinput.value)
-//     .then((userCredential) => {
-//         const user = userCredential.user;
-//         console.log(user.email)
-//     })
-// }
+const signinacc = async () => {
+    signInWithEmailAndPassword(auth, usernameInput.value, passwordInput.value)
+    .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user.email)
+        loginornot.account.push(user.email!)
+        console.log(loginornot.account)
+        loginornot.login()
+    })
 
-// onMounted(async(): Promise<void>=> {
 
-// })
+    router.push("/")
+    
+    console.log(database)
+}
+
+
+
+    
 </script>
 
 <style scoped></style>

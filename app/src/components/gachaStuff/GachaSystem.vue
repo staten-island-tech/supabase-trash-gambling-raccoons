@@ -29,7 +29,11 @@
 import { ref } from 'vue'
 import { type card } from '../../types'
 import { cards } from '../../Cards'
+<<<<<<< HEAD
 import { ownedCards } from '../../../OwnedCardsCards.ts'
+=======
+import { ownedCards } from '../../OwnedCards'
+>>>>>>> Haobin
 import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
 import { decks } from '@/decks.ts'
 let pityCount: number = 0 //the pity for five star
