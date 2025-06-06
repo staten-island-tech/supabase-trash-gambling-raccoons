@@ -1,10 +1,6 @@
 <template>
-  <div
-    :class="{
-      'w-[18%] text-center rounded-full m-[1%] bg-blue-400': true,
-    }"
-  >
-    <p>{{ cardItem.name }}</p>
+  <div class="w-[18%] text-center border rounded m-[1%] bg-blue-400">
+    <p class="text-xl bg-white">{{ cardItem.name }}</p>
     <p>Stars: {{ cardItem.stars }}</p>
     <p>Type: {{ cardItem.card_type }}</p>
     <p>Power: {{ cardItem.power }}</p>

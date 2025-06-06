@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1>Pity Count : {{ pityCount }}</h1>
+    <h1 class="bg-white w-fit text-2xl rounded text-left border-1">Pity Count : {{ pityCount }}</h1>
 
     <div class="flex justify-evenly items-center flex-wrap w-[100%] m-auto">
       <PulledGachaCards v-for="card in pulledCards" :ownedCard="card" />
     </div>
-    <div class="flex flex-wrap fixed top-[50%] w-[100%]">
+    <div class="flex flex-wrap fixed bottom-[5%] w-[100%]">
       <button
         class="rounded bg-sky-600 text-center w-[100%] text-neutral-50 m-2"
         type="submit"

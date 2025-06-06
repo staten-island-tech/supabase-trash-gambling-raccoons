@@ -2,12 +2,12 @@
   <div class="deck">
     <button
       type="submit"
-      class="bg-white rounded text-center w-[100%]"
+      class="bg-white rounded text-center w-fit text-xl"
       @click="isClicked = !isClicked"
     >
-      {{ deckItems.name }}
+      Deck: {{ deckItems.name }}
     </button>
-    <h1 v-if="isClicked" class="text-center bg-white">Your Cards</h1>
+    <h1 v-if="isClicked" class="text-center bg-white border">Your Cards</h1>
     <div class="flex flex-wrap">
       <CardsInDeck
         v-if="isClicked"
@@ -16,7 +16,7 @@
         :deckName="deckItems"
       />
     </div>
-    <h1 v-if="isClicked" class="text-center bg-white">Cards to Add</h1>
+    <h1 v-if="isClicked" class="text-center bg-white border">Cards to Add</h1>
     <div class="flex flex-wrap">
       <OwnedCardsButtons
         v-if="isClicked"

@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{
-      'w-[18%] text-center rounded-full m-[1%] flex items-center bg-blue-400': true,
+      'w-[18%] text-center rounded m-[1%] flex items-center bg-blue-400': true,
     }"
   >
     <div class="w-[90%]">
