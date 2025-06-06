@@ -12,6 +12,11 @@ function areyoulogin(){
   }
 }
 
+/* 
+  auth.ts try to make it so that when you login your username is imported to the authstore []
+  Login.vue just make a failsafe for the login part 
+  Try to make it possible to push cards into the user's []
+*/
 
 </script>
 
@@ -20,7 +25,6 @@ function areyoulogin(){
     <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/login">Login</RouterLink>
         <RouterLink to="/gacha">Gacha</RouterLink>
         <RouterLink to="/deck">Deck</RouterLink>
       </nav>
