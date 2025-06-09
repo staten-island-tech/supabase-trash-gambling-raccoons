@@ -4,11 +4,13 @@ import { useAuthStore } from './stores/auth'
 
 const authStore = useAuthStore()
 
-const routes = [{path:'/'}]
+const routes = [{ path: '/' }]
 
-function areyoulogin(){
-  if(!authStore.isLoggedin){
 
+function areyoulogin() {
+  //
+  if (!authStore.isLoggedin) {
+    //if this false then... what is it supposed to do? If loginned in then can access other pages. If not logged it, can only access the home and login page.
   }
 }
 
@@ -17,7 +19,6 @@ function areyoulogin(){
   Login.vue just make a failsafe for the login part 
   Try to make it possible to push cards into the user's []
 */
-
 </script>
 
 <template>
