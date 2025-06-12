@@ -33,22 +33,16 @@ import { ownedCards } from '@/OwnedCards.ts'
 import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
 import { useAuthStore } from '@/stores/auth'
 import { decks } from '@/decks.ts'
-import { addcardstouser } from '@/userdocument'
-import { finduserusingemail } from '@/userdocument'
-
 let pityCount: number = 0 //the pity for five star
 const pulledCards = ref<card[]>([]) //array for cards that were pulled
 
 const authStore = useAuthStore()
-const userid = finduserusingemail(authStore.account[0])
 
 const fiveStarCard: card[] = cards.filter((star) => star.stars === 5)
 const fourStarCard: card[] = cards.filter((star) => star.stars === 4)
 const threeStarCard: card[] = cards.filter((star) => star.stars === 3)
 
-
-
-async function pullAmount(amount: number) {
+function pullAmount(amount: number) {
   pulledCards.value = []
   for (let i = 0; i < amount; i++) {
     //for amount pulled
@@ -61,8 +55,6 @@ async function pullAmount(amount: number) {
       }
       pulledCards.value.push(guarateedCard)
       ownedCards.value.push(guarateedCard)
-      addcardstouser(await userid, guarateedCard)
-
       pityCount = 0
     } else {
       const RandoStar: number = Math.floor(Math.random() * 101)
@@ -76,8 +68,6 @@ async function pullAmount(amount: number) {
         }
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
-        addcardstouser(await userid, cardPulled)
-
         pityCount = 0
       } else if (RandoStar <= 99 && RandoStar > 80) {
         let cardPulled: card = fourStarCard[Math.floor(Math.random() * cards.length)]
@@ -86,8 +76,6 @@ async function pullAmount(amount: number) {
         }
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
-        addcardstouser(await userid, cardPulled)
-
         pityCount++
       } else {
         let cardPulled: card = threeStarCard[Math.floor(Math.random() * cards.length)]
@@ -96,8 +84,6 @@ async function pullAmount(amount: number) {
         }
         pulledCards.value.push(cardPulled)
         ownedCards.value.push(cardPulled)
-        addcardstouser(await userid, cardPulled)
-        
         pityCount++
       }
     }
