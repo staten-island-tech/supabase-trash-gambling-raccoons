@@ -9,6 +9,7 @@
   >
     <h1>{{ ownedCard.name }}</h1>
     <p>Type: {{ ownedCard.card_type }}</p>
+    <p>Game: {{ ownedCard.game }}</p>
     <div>
       <img :src="ownedCard.card_image" :alt="ownedCard.name + 's image'" />
     </div>

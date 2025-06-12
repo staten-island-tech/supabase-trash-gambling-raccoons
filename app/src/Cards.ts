@@ -1,6 +1,5 @@
 import { type card } from "../src/types"
 
-
 export const cards: card[] = [
     {
         name: "Traveler",
@@ -40,7 +39,7 @@ export const cards: card[] = [
         description: "A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.", /* gotta think about this  */
         power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "Physical",
+        card_type: "Rock",
         card_image: "string",
         stars: 5, /* think about thise later too^2 */
         game: "Genshin Impact",
@@ -51,7 +50,7 @@ export const cards: card[] = [
         description: "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.", /* gotta think about this  */
         power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "Physical",
+        card_type: "Rock",
         card_image: "string",
         stars: 5, /* think about thise later too^2 */
         game: "Genshin Impact",
@@ -62,7 +61,7 @@ export const cards: card[] = [
         description: "The Tianquan of Liyue Qixing. Her wealth is unsurpassed in all of Teyvat.", /* gotta think about this  */
         power: 5000, /* think about this later */
         leader: true, /* think about this later too */
-        card_type: "Physical",
+        card_type: "Rock",
         card_image: "string",
         stars: 1, /* think about thise later too^2 */
         game: "Genshin Impact",
@@ -194,7 +193,7 @@ export const cards: card[] = [
         description: "string", /* gotta think about this  */
         power: 4000, /* think about this later */
         leader: false, /* think about this later too */
-        card_type: "Physical",
+        card_type: "Rock",
         card_image: "string",
         stars: 4, /* think about thise later too^2 */
         game: "Genshin Impact",
@@ -513,7 +512,7 @@ export const cards: card[] = [
         description: "string", /* gotta think about this  */
         power: 4000, /* think about this later */
         leader: false, /* think about this later too */
-        card_type: "Physical",
+        card_type: "Rock",
         card_image: "string",
         stars: 4, /* think about thise later too^2 */
         game: "Genshin Impact",
@@ -689,7 +688,7 @@ export const cards: card[] = [
         description: "string", /* gotta think about this  */
         power: 3000, /* think about this later */
         leader: false, /* think about this later too */
-        card_type: "Physical",
+        card_type: "Rock",
         card_image: "string",
         stars: 3, /* think about thise later too^2 */
         game: "Genshin Impact",
@@ -788,7 +787,7 @@ export const cards: card[] = [
         description: "string", /* gotta think about this  */
         power: 3000, /* think about this later */
         leader: false, /* think about this later too */
-        card_type: "Physical",
+        card_type: "Rock",
         card_image: "string",
         stars: 3, /* think about thise later too^2 */
         game: "Genshin Impact",
@@ -799,7 +798,7 @@ export const cards: card[] = [
         description: "string", /* gotta think about this  */
         power: 3000, /* think about this later */
         leader: false, /* think about this later too */
-        card_type: "Physical",
+        card_type: "Rock",
         card_image: "string",
         stars: 3, /* think about thise later too^2 */
         game: "Genshin Impact",
@@ -942,7 +941,7 @@ export const cards: card[] = [
         description: "string", /* gotta think about this  */
         power: 3000, /* think about this later */
         leader: false, /* think about this later too */
-        card_type: "Physical",
+        card_type: "Rock",
         card_image: "string",
         stars: 3, /* think about thise later too^2 */
         game: "Genshin Impact",
@@ -953,7 +952,7 @@ export const cards: card[] = [
         description: "string", /* gotta think about this  */
         power: 3000, /* think about this later */
         leader: false, /* think about this later too */
-        card_type: "Physical",
+        card_type: "Rock",
         card_image: "string",
         stars: 3, /* think about thise later too^2 */
         game: "Genshin Impact",
@@ -1028,11 +1027,11 @@ export const cards: card[] = [
     {
         name: "Chiori",
         description: "string", /* gotta think about this  */
-        power: 3, /* think about this later */
+        power: 3000, /* think about this later */
         leader: false, /* think about this later too */
-        card_type: "Physical",
+        card_type: "Rock",
         card_image: "string",
-        stars: 1, /* think about thise later too^2 */
+        stars: 3, /* think about thise later too^2 */
         game: "Genshin Impact",
         region: "Inazuma, Teyvat",
     },
