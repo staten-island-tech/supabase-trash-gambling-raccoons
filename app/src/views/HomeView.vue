@@ -1,8 +1,8 @@
 <template>
   <div>
-    <img src="/image.png" alt="profile" @click="opendropdown">
+    <img src="/profile.png" alt="profile" @click="opendropdown">
     <div v-if="isOpen">
-      <button v-for="(options, index) in accountchoices" key="index" @click="loginorlogout(options)"> {{ options }} </button>
+      <button v-for="(options) in accountchoices()" key="index" @click="loginorlogout(options)"> {{ options }} </button>
     </div>
   </div>
 </template>
@@ -10,8 +10,22 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useRouter } from 'vue-router'
+import { getActivePinia } from 'pinia';
+import { useAuthStore } from '@/stores/auth';
 
-const accountchoices = ['Login', 'Logout']
+getActivePinia()
+const authstore = useAuthStore()
+
+function accountchoices(){
+  let choices = []
+  if (authstore.account.length === 0) {
+    choices = ['Login']
+    return choices
+  } else {
+    choices = ['Logout']
+    return choices
+  }
+}
 
 const router = useRouter()
 
@@ -22,7 +36,10 @@ function opendropdown(){
 
 function loginorlogout(options:string){
   if(options === 'Login') router.push('/login')
-  else router.push('/')
+  else {
+    router.push('/')
+    authstore.account = []
+}
 }
 
 </script>

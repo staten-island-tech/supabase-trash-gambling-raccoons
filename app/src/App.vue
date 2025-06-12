@@ -1,19 +1,5 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import { useAuthStore } from './stores/auth'
-
-const authStore = useAuthStore()
-
-const routes = [{ path: '/' }]
-
-
-function areyoulogin() {
-  //
-  if (!authStore.isLoggedin) {
-    //if this false then... what is it supposed to do? If loginned in then can access other pages. If not logged it, can only access the home and login page.
-  }
-}
-
 /* 
   auth.ts try to make it so that when you login your username is imported to the authstore []
   Login.vue just make a failsafe for the login part 

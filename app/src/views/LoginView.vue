@@ -39,8 +39,6 @@ import { useAuthStore } from '@/stores/auth';
 
 const loginornot = useAuthStore()
 
-/*  */
-
 const usernameInput = ref('');
 const passwordInput = ref('');
 const checkpassword = ref('')
@@ -65,6 +63,7 @@ const createacc = async () => {
         const user = userCredential.user;
         console.log(user)
         adddatatouserdoc(user.uid, user.email!, [], [])
+        router.push("/")
     })
     } catch(error){
         console.log("error")
