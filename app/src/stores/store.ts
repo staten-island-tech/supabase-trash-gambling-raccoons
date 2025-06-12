@@ -1,7 +1,7 @@
 import { reactive } from "vue";
 
 export const AllowedorNotallowed = reactive({
-  allowedViews:['Login', 'Home'],
+  allowedViews:['login', 'home'],
   RestrictedViews:[],
   })
 

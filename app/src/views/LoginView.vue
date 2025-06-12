@@ -29,10 +29,11 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { auth, database } from '../firebase';
+import { auth } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { adddatatouserdoc } from '@/userdocument';
 import router from '@/router';
+import { AllowedorNotallowed } from '@/stores/store';
 import { useAuthStore } from '@/stores/auth';
 
 const loginornot = useAuthStore()
@@ -77,7 +78,7 @@ const signinacc = async () => {
         await signInWithEmailAndPassword(auth, usernameInput.value, passwordInput.value)
         .then((userCredential) => {
         const user = userCredential.user;
-        console.log(user.uid)
+        AllowedorNotallowed.RestrictedViews = ['login', 'home', 'gacha', 'deck', 'ownedCards']
         loginornot.account.push(user.email!)
         loginornot.login()
         router.push("/")

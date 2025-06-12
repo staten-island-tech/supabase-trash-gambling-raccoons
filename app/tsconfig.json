@@ -7,5 +7,14 @@
     {
       "path": "./tsconfig.app.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "module": "esnext", // or "es2022"
+    "target": "esnext", // Ensure it matches or exceeds the module level
+    "moduleResolution": "node", // Required for Vite
+   "lib": ["dom", "esnext"], // Ensure compatibility with modern JavaScript features
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
 }
