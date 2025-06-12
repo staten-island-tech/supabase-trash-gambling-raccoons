@@ -1,10 +1,6 @@
 import { cards } from "./Cards";
 
+const genshinbanner = cards.filter((card) => card.game === 'Genshin Impact')
+const honkaibanner = cards.filter((card) => card.game === 'Honkai: Star Rail')
 
-const gamebanner = []
-
-cards.forEach(card => {
-
-    console.log(card.name)
-    
-});
+export {genshinbanner, honkaibanner}

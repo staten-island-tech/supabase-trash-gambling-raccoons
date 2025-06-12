@@ -33,6 +33,7 @@ import { ownedCards } from '@/OwnedCards.ts'
 import PulledGachaCards from '@/components/gachaStuff/PulledGachaCards.vue'
 import { useAuthStore } from '@/stores/auth'
 import { decks } from '@/decks.ts'
+
 let pityCount: number = 0 //the pity for five star
 const pulledCards = ref<card[]>([]) //array for cards that were pulled
 

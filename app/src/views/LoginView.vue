@@ -21,8 +21,6 @@
         <input v-model="checkpassword" type="text" placeholder="CheckPassword">
         <br>
         <button @click="createacc">Create Account</button>
-        <br>
-        <button @click="IfNoAccount">Login</button>
 </div>
         
 
@@ -63,6 +61,7 @@ const createacc = async () => {
         const user = userCredential.user;
         console.log(user)
         adddatatouserdoc(user.uid, user.email!, [], [])
+        loginornot.account.push(user.email!)
         router.push("/")
     })
     } catch(error){
@@ -71,19 +70,28 @@ const createacc = async () => {
 }
 
 const signinacc = async () => {
-    signInWithEmailAndPassword(auth, usernameInput.value, passwordInput.value)
-    .then((userCredential) => {
+    if(!usernameInput.value || !passwordInput.value){
+        console.log("Fill out all inputs")
+        return
+    } else {
+        await signInWithEmailAndPassword(auth, usernameInput.value, passwordInput.value)
+        .then((userCredential) => {
         const user = userCredential.user;
-        console.log(user.email)
+        console.log(user.uid)
         loginornot.account.push(user.email!)
-        console.log(loginornot.account)
         loginornot.login()
+        router.push("/")
     })
+    }
 
-
-    router.push("/")
     
-    console.log(database)
+
+    
+
+
+    
+    
+    
 }
 
 
