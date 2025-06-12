@@ -45,7 +45,6 @@ const router = createRouter({
     },
   ],
 })
-//if this false then... what is it supposed to do? If loginned in then can access other pages. If not logged it, can only access the home and login page.
 
 
 export default router
