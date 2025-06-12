@@ -13,6 +13,7 @@ export type card = {
 export type deck = {
     name: string
     cards: card[]
+    cardsNotIn: card[]
 }
 
 export type profile = {

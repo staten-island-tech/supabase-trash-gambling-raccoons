@@ -1,8 +1,14 @@
-
+<<<<<<<< HEAD:app/OwnedCardsCards.ts
+import { type card } from './src/types.ts'
+import {ref, onMounted} from 'vue'
+import {cards} from './src/Cards.ts'
+const ownedCards = ref<card[]>([])
+========
 import { type card } from './types.js'
 import {ref} from 'vue'
 import {cards} from './Cards.js'
-const ownedCards = ref<card[]>([])
+export const ownedCards = ref<card[]>([])
+>>>>>>>> Haobin:app/src/OwnedCards.ts
 
 //40 cards + 10 DON cards
 //only four duplicates allowed!
@@ -45,4 +51,6 @@ function addCards(array: card[], threshold: number){
 
 //Adding Traveler to card set
 
+
+console.log(ownedCards.value)
 export {ownedCards}

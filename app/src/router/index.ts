@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '@/views/HomeView.vue';
-import LoginView from '../views/LoginView.vue';
-import GachaView from '@/views/GachaView.vue';
-import DecksView from '@/views/DecksView.vue';
+import HomeView from '@/views/HomeView.vue'
+import LoginView from '../views/LoginView.vue'
+import GachaView from '../views/GachaView.vue'
+import DecksView from '@/views/DecksView.vue'
+import OwnedCardsView from '@/views/OwnedCardsView.vue'
 import '@/assets/main.css'
 import { getActivePinia } from 'pinia';
 import { useAuthStore } from '@/stores/auth';
@@ -36,7 +37,12 @@ const router = createRouter({
       path: '/deck',
       name: 'deck',
       component: DecksView,
-    }
+    },
+    {
+      path: '/ownedCards',
+      name: 'ownedCards',
+      component: OwnedCardsView,
+    },
   ],
 })
 //if this false then... what is it supposed to do? If loginned in then can access other pages. If not logged it, can only access the home and login page.

@@ -1,14 +1,24 @@
 <template>
-  <div class="flex">
-    <img :src="ownedCards.card_image" alt="image!" srcset="" />
-    <h1>{{ ownedCards.name }}</h1>
+  <div
+    :class="{
+      'h-[40%] w-[18%] text-center rounded m-[1%]': true,
+      'bg-blue-500': ownedCard.stars === 3,
+      'bg-purple-500': ownedCard.stars === 4,
+      'bg-yellow-500': ownedCard.stars === 5,
+    }"
+  >
+    <h1>{{ ownedCard.name }}</h1>
+    <p>Type: {{ ownedCard.card_type }}</p>
+    <div>
+      <img :src="ownedCard.card_image" :alt="ownedCard.name + 's image'" />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import type { card } from '../../types'
 type Props = {
-  ownedCards: card
+  ownedCard: card
 }
 defineProps<Props>()
 </script>

@@ -1089,7 +1089,7 @@ export const cards: card[] = [
         card_image: "string",
         stars: 5, /* think about thise later too^2 */
         game: "Honkai: Star Rail",
-        region: "Penacony",
+        region: "Astral Express",
     },
     {
         name: "Saber",
@@ -1100,7 +1100,7 @@ export const cards: card[] = [
         card_image: "string",
         stars: 5, /* think about thise later too^2 */
         game: "Honkai: Star Rail",
-        region: "Penacony",
+        region: "Astral Express",
     },
     {
         name: "Aventurine",
@@ -1193,9 +1193,9 @@ export const cards: card[] = [
     {
         name: "Anaxa",
         description: "string", /* gotta think about this  */
-        power: 4000, /* think about this later */
-        leader: false, /* think about this later too */
-        card_type: "Wind",
+        power: 1, /* think about this later */
+        leader: true, /* think about this later too */
+        card_type: "string",
         card_image: "string",
         stars: 4, /* think about thise later too^2 */
         game: "Honkai: Star Rail",
@@ -1204,9 +1204,9 @@ export const cards: card[] = [
     {
         name: "Black Swan",
         description: "string", /* gotta think about this  */
-        power: 4000, /* think about this later */
-        leader: false, /* think about this later too */
-        card_type: "Wind",
+        power: 1, /* think about this later */
+        leader: true, /* think about this later too */
+        card_type: "string",
         card_image: "string",
         stars: 4, /* think about thise later too^2 */
         game: "Honkai: Star Rail",
@@ -1215,9 +1215,9 @@ export const cards: card[] = [
     {
         name: "Blade",
         description: "string", /* gotta think about this  */
-        power: 4000, /* think about this later */
-        leader: false, /* think about this later too */
-        card_type: "Wind",
+        power: 1, /* think about this later */
+        leader: true, /* think about this later too */
+        card_type: "string",
         card_image: "string",
         stars: 4, /* think about thise later too^2 */
         game: "Honkai: Star Rail",
@@ -1226,9 +1226,9 @@ export const cards: card[] = [
     {
         name: "Boothill",
         description: "string", /* gotta think about this  */
-        power: 4000, /* think about this later */
-        leader: false, /* think about this later too */
-        card_type: "Physical",
+        power: 1, /* think about this later */
+        leader: true, /* think about this later too */
+        card_type: "string",
         card_image: "string",
         stars: 4, /* think about thise later too^2 */
         game: "Honkai: Star Rail",
@@ -1237,9 +1237,9 @@ export const cards: card[] = [
     {
         name: "Bronya",
         description: "string", /* gotta think about this  */
-        power: 4000, /* think about this later */
-        leader: false, /* think about this later too */
-        card_type: "Wind",
+        power: 1, /* think about this later */
+        leader: true, /* think about this later too */
+        card_type: "string",
         card_image: "string",
         stars: 4, /* think about thise later too^2 */
         game: "Honkai: Star Rail",
