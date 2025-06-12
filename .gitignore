@@ -9951,3 +9951,5 @@ node_modules/daisyui/utilities/typography/index.js
 node_modules/daisyui/utilities/typography/object.js
 package-lock.json
 package.json
+node_modules/.vue-global-types/vue_3.5_0_0_0.d.ts
+node_modules/.vue-global-types/vue_99_0_0_0.d.ts
