@@ -67,6 +67,8 @@ async function pullAmount(amount: number) {
       while (!guarateedCard) {
         guarateedCard = fiveStarCard[Math.floor(Math.random() * cards.length)]
       }
+
+      
       pulledCards.value.push(guarateedCard)
       ownedCards.value.push(guarateedCard)
       pityCount = 0 
@@ -80,6 +82,7 @@ async function pullAmount(amount: number) {
       if (RandoStar > 99) {
         // Five-star card
         cardPulled = fiveStarCard[Math.floor(Math.random() * fiveStarCard.length)];
+        pityCount=0
       } else if (RandoStar > 80) {
         // Four-star card
         cardPulled = fourStarCard[Math.floor(Math.random() * fourStarCard.length)];
