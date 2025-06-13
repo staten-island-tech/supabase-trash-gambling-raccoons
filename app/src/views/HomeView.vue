@@ -1,13 +1,12 @@
 <template>
   <div>
-    <img src="/profile.png" alt="profile" @click="opendropdown">
+    <img class="h-20 w-20 py-1 px-2 text-xs rounded hover:bg-blue-600" src="/profile.png" alt="profile" @click="opendropdown">
     <div v-if="isOpen">
-      <button v-for="(options) in accountchoices()" key="index" @click="loginorlogout(options)"> {{ options }} </button>
+      <button class="btn" v-for="(options) in accountchoices()" key="index" @click="loginorlogout(options)"  >{{ options }} </button>
     </div>
 
     <div v-if="authstore.isLoggedin">
-      <h1>Game</h1>
-      <GameLobby/>>
+      <GameLobby/>
     </div>
   </div>
 </template>

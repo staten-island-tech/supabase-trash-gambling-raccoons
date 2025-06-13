@@ -1,6 +1,7 @@
 <template>
   <div
     :class="{
+      'card': true,
       'w-full max-w-md mx-auto rounded-xl shadow-md border p-6 dark:border-gray-700': true,
       'bg-blue-500': ownedCard.stars === 3,
       'bg-purple-500': ownedCard.stars === 4,
@@ -10,9 +11,6 @@
     <h1>{{ ownedCard.name }}</h1>
     <p>Type: {{ ownedCard.card_type }}</p>
     <p>Game: {{ ownedCard.game }}</p>
-    <div>
-      <img :src="ownedCard.card_image" :alt="ownedCard.name + 's image'" />
-    </div>
   </div>
 </template>
 

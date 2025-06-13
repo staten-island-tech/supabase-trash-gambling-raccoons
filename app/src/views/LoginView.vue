@@ -2,13 +2,13 @@
     <div>
 
 <div v-if="!makeanaccount">
-        <input v-model="usernameInput" type="text" placeholder="Username">
+        <input class="input" v-model="usernameInput" type="text" placeholder="Username">
         <br>
-        <input v-model="passwordInput" type="text" placeholder="Password">
+        <input class="input" v-model="passwordInput" type="text" placeholder="Password">
         <br>
-        <button @click="signinacc">Login In</button>
+        <button class="btn" @click="signinacc">Login In</button>
         <br>
-        <button @click="IfNoAccount">Make An Account</button>
+        <button class="btn" @click="IfNoAccount">Make An Account</button>
         <br>
     </div>
         
@@ -20,7 +20,7 @@
         <br>
         <input v-model="checkpassword" type="text" placeholder="CheckPassword">
         <br>
-        <button @click="createacc">Create Account</button>
+        <button class="btn" @click="createacc">Create Account</button>
 </div>
         
 
