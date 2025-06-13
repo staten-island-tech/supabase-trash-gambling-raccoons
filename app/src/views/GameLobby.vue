@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import { database } from "@/firebase";
-import { ref as dbRef, push, onValue, set as Fireset } from "firebase/database";
+import { ref as dbRef, push, onValue, set as Fireset, remove } from "firebase/database";
 import {type Message} from '@/types'
 import { useAuthStore } from "@/stores/auth";
 import { onDisconnect } from "firebase/database";
@@ -45,11 +45,10 @@ onMounted(async () => {
   }
 });
 
-  // Clear chat if no users online
   onValue(await presenceRef(), (snapshot) => {
     const usersOnline = snapshot.val();
     if (!usersOnline || Object.keys(usersOnline).length === 0) {
-      messagesRef.remove()
+      remove(messagesRef)
     }
   });
 
