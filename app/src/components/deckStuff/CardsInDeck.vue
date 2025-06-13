@@ -4,7 +4,6 @@
     <p>Stars: {{ cardItem.stars }}</p>
     <p>Type: {{ cardItem.card_type }}</p>
     <p>Power: {{ cardItem.power }}</p>
-    <img :src="cardItem.card_image" alt="Image of your card" />
     <button type="submit" class="bg-white rounded" @click="removeCard(cardItem, deckName.name)">
       Remove Card
     </button>

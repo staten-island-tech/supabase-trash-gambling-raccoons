@@ -14,11 +14,11 @@
         
 
 <div v-else>
-        <input v-model="usernameInput" type="text" placeholder="Username">
+        <input class="input" v-model="usernameInput" type="text" placeholder="Username">
         <br>
-        <input v-model="passwordInput" type="text" placeholder="Password">
+        <input class="input" v-model="passwordInput" type="text" placeholder="Password">
         <br>
-        <input v-model="checkpassword" type="text" placeholder="CheckPassword">
+        <input class="input" v-model="checkpassword" type="text" placeholder="CheckPassword">
         <br>
         <button class="btn" @click="createacc">Create Account</button>
 </div>
@@ -64,8 +64,9 @@ const createacc = async () => {
         adddatatouserdoc(user.uid, user.email!, [], [])
         AllowedorNotallowed.RestrictedViews = ['login', 'home', 'gacha', 'deck', 'ownedCards']
         loginornot.account.push(user.email!)
-        console.log(userId)
         router.push("/")
+        console.log(userId)
+        
     })
     } catch(error){
         console.log("error")

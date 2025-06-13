@@ -12,7 +12,7 @@ import { useAuthStore } from './stores/auth';
         <RouterLink class="btn" to="/gacha">Gacha</RouterLink>
         <RouterLink class="btn" to="/deck">Deck</RouterLink>
         <div v-if="useAuthStore().isLoggedin">
-          <RouterLink class="btn" to="/GameLobby">Play Game</RouterLink>
+          <RouterLink class="btn" to="/GameLobby">Message</RouterLink>
           <RouterLink class="btn" to="/ownedCards">Your Cards</RouterLink>
         </div>
         

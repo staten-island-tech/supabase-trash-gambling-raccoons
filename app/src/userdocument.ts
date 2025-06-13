@@ -2,7 +2,6 @@ import { ref, set as Fireset, push, query, orderByChild, equalTo, get } from "fi
 import { database } from "./firebase"
 import type { deck, card } from "./types"
 import { ref as Vueref } from "vue"
-import { useAuthStore } from "./stores/auth"
 
 export function adddatatouserdoc(userId:string, username:string, decks:deck[], cards:card[]) {
     const userRef = ref(database, 'users/' + userId)
