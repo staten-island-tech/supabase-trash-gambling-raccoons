@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{
-      'h-[40%] w-[18%] text-center rounded m-[1%]': true,
+      'w-full max-w-md mx-auto rounded-xl shadow-md border p-6 dark:border-gray-700': true,
       'bg-blue-500': ownedCard.stars === 3,
       'bg-purple-500': ownedCard.stars === 4,
       'bg-yellow-500': ownedCard.stars === 5,

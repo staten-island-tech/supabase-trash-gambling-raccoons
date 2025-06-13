@@ -4,6 +4,11 @@
     <div v-if="isOpen">
       <button v-for="(options) in accountchoices()" key="index" @click="loginorlogout(options)"> {{ options }} </button>
     </div>
+
+    <div v-if="authstore.isLoggedin">
+      <h1>Game</h1>
+      <GameLobby/>>
+    </div>
   </div>
 </template>
 

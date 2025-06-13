@@ -31,7 +31,7 @@
 import { ref } from 'vue';
 import { auth } from '../firebase';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
-import { adddatatouserdoc } from '@/userdocument';
+import { adddatatouserdoc, finduserusingemail } from '@/userdocument';
 import router from '@/router';
 import { AllowedorNotallowed } from '@/stores/store';
 import { useAuthStore } from '@/stores/auth';
@@ -62,7 +62,9 @@ const createacc = async () => {
         const user = userCredential.user;
         console.log(user)
         adddatatouserdoc(user.uid, user.email!, [], [])
+        AllowedorNotallowed.RestrictedViews = ['login', 'home', 'gacha', 'deck', 'ownedCards']
         loginornot.account.push(user.email!)
+        console.log(userId)
         router.push("/")
     })
     } catch(error){
@@ -81,6 +83,10 @@ const signinacc = async () => {
         AllowedorNotallowed.RestrictedViews = ['login', 'home', 'gacha', 'deck', 'ownedCards']
         loginornot.account.push(user.email!)
         loginornot.login()
+        const username = ref(useAuthStore().account[0])
+
+        const userId = finduserusingemail(username.value)
+        console.log(userId)
         router.push("/")
     })
     }

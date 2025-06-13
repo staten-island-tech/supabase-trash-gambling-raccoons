@@ -26,3 +26,10 @@ export type profile = {
 export type userdoc = {
     profile: profile;
 }
+
+export interface Message {
+  id: string;
+  username: string;
+  text: string;
+  timestamp: number;
+}

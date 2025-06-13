@@ -6,7 +6,7 @@ import DecksView from '@/views/DecksView.vue'
 import OwnedCardsView from '@/views/OwnedCardsView.vue'
 import '@/assets/main.css'
 import { useAuthStore } from '@/stores/auth';
-import { AllowedorNotallowed } from '@/stores/store'
+import GameLobby from '@/views/GameLobby.vue'
 
 const routes = [
   {
@@ -34,6 +34,11 @@ const routes = [
     name: 'ownedCards',
     component: OwnedCardsView,
   },
+  {
+    path: '/GameLobby',
+    name: 'gamelobby',
+    component: GameLobby
+  }
 ]
 
 const router = createRouter({
@@ -41,9 +46,9 @@ const router = createRouter({
   routes,
 })
 
-router.beforeEach(async(to, from) => {
+router.beforeEach(async (to, from) => {
   if(!useAuthStore().isLoggedin && to.name !=='login' && to.name !== 'home'){
-    return {name: ['home' ]}
+    return {name: ['home']}
   }
 })
 

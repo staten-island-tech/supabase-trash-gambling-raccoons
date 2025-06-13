@@ -50,60 +50,63 @@ const threeStarCard: card[] = cards.filter((star) => star.stars === 3)
 
 async function pullAmount(amount: number) {
   pulledCards.value = []
+  const userId = await finduserusingemail(authStore.account[0]);
+  
+  if (!userId) {
+    console.error("User ID not found. Aborting card pull.");
+    return;}
+  
+
+
   for (let i = 0; i < amount; i++) {
     //for amount pulled
     if (pityCount >= 90) {
       //issue with five star pulling
       //pull five star card!!!
       let guarateedCard: card = fiveStarCard[Math.floor(Math.random() * cards.length)]
-      while (guarateedCard === undefined) {
+      while (!guarateedCard) {
         guarateedCard = fiveStarCard[Math.floor(Math.random() * cards.length)]
       }
       pulledCards.value.push(guarateedCard)
       ownedCards.value.push(guarateedCard)
-      addcardstouser(await userid, guarateedCard)
+      pityCount = 0 
 
-      pityCount = 0
+      addcardstouser(userId, guarateedCard)
+      
     } else {
       const RandoStar: number = Math.floor(Math.random() * 101)
+      let cardPulled: card;
+
       if (RandoStar > 99) {
-        //five percent chance for a five star card
-        //pull five star card below
-        let cardPulled: card = fiveStarCard[Math.floor(Math.random() * cards.length)]
-        while (cardPulled === undefined) {
-          //makes sure the cardPulled is defined and not empty
-          cardPulled = fiveStarCard[Math.floor(Math.random() * cards.length)]
-        }
-        pulledCards.value.push(cardPulled)
-        ownedCards.value.push(cardPulled)
-        addcardstouser(await userid, cardPulled)
-
-        pityCount = 0
-      } else if (RandoStar <= 99 && RandoStar > 80) {
-        let cardPulled: card = fourStarCard[Math.floor(Math.random() * cards.length)]
-        while (cardPulled === undefined) {
-          cardPulled = fourStarCard[Math.floor(Math.random() * cards.length)]
-        }
-        pulledCards.value.push(cardPulled)
-        ownedCards.value.push(cardPulled)
-        addcardstouser(await userid, cardPulled)
-
-        pityCount++
+        // Five-star card
+        cardPulled = fiveStarCard[Math.floor(Math.random() * fiveStarCard.length)];
+      } else if (RandoStar > 80) {
+        // Four-star card
+        cardPulled = fourStarCard[Math.floor(Math.random() * fourStarCard.length)];
       } else {
-        let cardPulled: card = threeStarCard[Math.floor(Math.random() * cards.length)]
-        while (cardPulled === undefined) {
-          cardPulled = threeStarCard[Math.floor(Math.random() * cards.length)]
-        }
-        pulledCards.value.push(cardPulled)
-        ownedCards.value.push(cardPulled)
-        addcardstouser(await userid, cardPulled)
-        
-        pityCount++
+        // Three-star card
+        cardPulled = threeStarCard[Math.floor(Math.random() * threeStarCard.length)];
       }
+
+      while (!cardPulled) {
+        cardPulled = (RandoStar > 99)
+          ? fiveStarCard[Math.floor(Math.random() * fiveStarCard.length)]
+          : (RandoStar > 80)
+            ? fourStarCard[Math.floor(Math.random() * fourStarCard.length)]
+            : threeStarCard[Math.floor(Math.random() * threeStarCard.length)];
+      }
+
+      pulledCards.value.push(cardPulled);
+      ownedCards.value.push(cardPulled);
+      pityCount++;
+
+      addcardstouser(userId, cardPulled); // Ensure the card is added to the database
     }
   }
+
   sortCards()
 }
+
 
 function sortCards() {
   ownedCards.value.sort((a, b) => {

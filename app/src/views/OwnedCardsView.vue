@@ -10,7 +10,6 @@
 <script setup lang="ts">
 import OwnedCards from '@/components/ownedCardsStuff/OwnedCards.vue'
 import { ownedCards } from '../OwnedCards.ts'
-import type { card } from '@/types.ts'
 
 const uniqueCard = new Set(ownedCards.value)
 </script>
